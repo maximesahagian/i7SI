@@ -13,6 +13,6 @@
 
 </head>
 <body>
-
+@inlude('components/header')
 </body>
 </html>
