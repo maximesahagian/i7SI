@@ -2,16 +2,17 @@
 
 <div class="callback--container">
     <div class="callback--title">
-        <h3>Un click un appel</h3>
+        <h3>Un click, un appel</h3>
     </div>
     <div class="callback--inputcontainer">
-        <input type="tel" id="demo" placeholder="">
+        <input type="tel" id="demo" placeholder="Saisissez votre numéro">
         <p class="inputcontainer--text">L'un de nos conseillers vous appelera des que possible.</p>
-        <button class="inputcontainer--button">Appelez moi</button>
+        <button class="inputcontainer--button">Appelez moi !</button>
     </div>
 </div>
 <div class="call-us">
-
+    <img class="call-us-image phone" src="/images/call-phone.png" alt="Contact">
+    <img class="call-us-image  cross" src="/images/call-cross.png" alt="Fermer">
 </div>
 
 
@@ -21,7 +22,19 @@
     $("#demo").intlTelInput();
 
     $('.call-us').click(function(){
-        $('.callback--container').show()
+        $('.callback--container').show();
+        if($('.phone').css('display')== 'none'){
+            $('.callback--container').hide();
+            $('.cross').css({display : 'none'});
+            $('.phone').css({display : 'block'});
+        }else{
+            $('.callback--container').show();
+            $('.phone').css({display : 'none'});
+            $('.cross').css({display : 'block'});
+        }
+
+
+        console.log($('.phone').css('display'));
         //OPEN THE POPIN
     });
 </script>

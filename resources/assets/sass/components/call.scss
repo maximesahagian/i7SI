@@ -2,19 +2,32 @@
 
 div.call-us {
   position: fixed;
-  bottom: 30px;
+  bottom: 9px;
   right: 30px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #00a0f0;
+  height: 80px;
+  width: 80px;
+  border-radius: 36px;
+  background-color: $color-orange;
+
+  .call-us-image{
+
+    margin:23px auto;
+    width: 40%;
+  }
+  .phone{
+    display: block;
+  }
+  .cross{
+    display: none;
+  }
 }
  .callback--container {
+   display: none;
    position: fixed;
    bottom: 100px;
    right: 30px;
    background: white;
-   width: 25vw;
+   width: 380px;
    -moz-box-shadow: 9px 7px 26px 0px #656565;
    -webkit-box-shadow: 9px 7px 26px 0px #656565;
    -o-box-shadow: 9px 7px 26px 0px #656565;
@@ -27,29 +40,88 @@ div.call-us {
    .callback--title{
      height: 70px;
      background: $color-orange;
-     border-top-left-radius: 3vw;
-     border-top-right-radius: 3vw;
+     border-top-left-radius: 36px;
+     border-top-right-radius: 36px;
       h3{
         position: relative;
         top: 25px;
         text-align: left;
         color: white;
         padding-left: 30px;
-        font-family: sans-serif;
+        font-family: futura;
         font-size: 22px;
       }
    }
    .callback--inputcontainer {
+
+
+
+
      #demo {
        background: none;
        border: none;
+       width: 100%;
+       font-size: 20px;
+       font-family: lato;
+       font-weight: 200;
+       height: 35px;
        &:focus {
          outline: none;
        }
+       &:before {
+         content:"";
+         background: url('/images/circleflag.png')no-repeat;
+         background-size: contain;
+         width: 21px;
+         height: 35px;
+         position:relative;
+         left: 63px;
+         top: 38px;
+
+       }
+
      }
      .inputcontainer--text {
+       width: 63%;
+       padding: 35px 105px;
+       font-family: futura;
+       font-size: 15px;
+       color: #777777;
+       position:relative;
+       text-align: left;
        &:before {
-         content: url('callbackpicto.png')
+         content:"";
+         background: url('/images/pictoflag.png')no-repeat;
+         background-size: contain;
+         width: 21px;
+         height: 35px;
+         position:absolute;
+         left: 63px;
+         top: 38px;
+
+       }
+     }
+     .inputcontainer--button{
+       font-family: futura;
+       font-size: 30px;
+       color: white;
+       width: 80%;
+       background: $color-orange;
+       border-radius: 36px;
+       height: 55px;
+       border-right:  7px #FF8E2F;
+       border-right:  26px  #FF8E2F;
+       border-top:  0px #FF8E2F;
+       border-left:  0px  #FF8E2F;
+       box-shadow: 0px;
+       margin-bottom: 32px;
+
+       &:active{
+         border-right:  7px #FF8E2F;
+         border-right:  26px  #FF8E2F;
+       }
+       &:focus{
+         outline: none;
        }
      }
    }
