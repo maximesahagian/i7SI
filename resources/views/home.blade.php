@@ -34,8 +34,8 @@
 <body>
     <div class="main">
         @include('components/header_home')
+        @include ("components/call")
         @include("components/contact")
-        @include('components/header_home')
     </div>
 </body>
 </html>
