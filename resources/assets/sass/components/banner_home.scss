@@ -1,0 +1,49 @@
+section.banner-home{
+  height: 700px;
+  background-color: #000;
+  background-image: url('/images/banner_background.jpg');
+  background-size: cover;
+  .banner-container{
+    display: table;
+    height: 100%;
+    .banner-content{
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 200px;
+      color: #fff;
+      h2{
+        font-size: 60px;
+      }
+      p{
+        margin-top: 50px;
+      }
+      .discover{
+        margin-top: 50px;
+        cursor: pointer;
+        .arrow-right{
+          display: inline-block;
+          height: 50px;
+          width: 50px;
+          border: 1px solid $color-orange;
+          border-radius: 50%;
+          position: relative;
+          &:before{
+            content: "";
+            position: absolute;
+            top: 18px;
+            left: 21px;
+            width: 9px;
+            height: 15.5px;
+            background-image: url("/images/arrow_right.png");
+            background-size: cover;
+          }
+        }
+        span{
+          position: relative;
+          bottom: 20px;
+          left: 20px;
+        }
+      }
+    }
+  }
+}
