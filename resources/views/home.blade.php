@@ -32,7 +32,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
-    <div class="main">
+    <div class="main-app">
         @include('components/header_home')
         @include ("components/call")
         @include("components/contact")
