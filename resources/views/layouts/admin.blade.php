@@ -47,9 +47,7 @@
             <nav>
                 <ul class="nav">
                     <li><a href="/admin" class="<?=(isset($active) && $active === 'index') ? 'active' : ''?>"><i class="lnr lnr-home"></i> <span>Accueil</span></a></li>
-                    <li><a href="/admin/news" class="<?=(isset($active) && $active === 'news') ? 'active' : ''?>"><i class="lnr lnr-code"></i> <span>Actualités</span></a></li>
-                    <li><a href="/admin/team" class="<?=(isset($active) && $active === 'team') ? 'active' : ''?>"><i class="lnr lnr-chart-bars"></i> <span>L'équipe</span></a></li>
-                    <li><a href="/admin/admins" class="<?=(isset($active) && $active === 'admins') ? 'active' : ''?>"><i class="lnr lnr-cog"></i> <span>Administrateurs</span></a></li>
+                    <li><a href="/admin/messages" class="<?=(isset($active) && $active === 'messages') ? 'active' : ''?>"><i class="lnr lnr-cog"></i> <span>Messages</span></a></li>
                     <li><a href="/admin/settings" class="<?=(isset($active) && $active === 'settings') ? 'active' : ''?>"><i class="lnr lnr-cog"></i> <span>Réglages</span></a></li>
                     <li><a href="/logout"><i class="lnr lnr-exit"></i> <span>Se déconnecter</span></a></li>
 

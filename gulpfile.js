@@ -9,4 +9,7 @@ elixir(function(mix) {
     mix.copy('resources/assets/css', 'public/css')
 
     mix.copy('resources/assets/favicon', 'public/favicon')
+
+    mix.copy('resources/assets/fonts', 'public/fonts')
+    mix.copy('resources/assets/js', 'public/js')
 });

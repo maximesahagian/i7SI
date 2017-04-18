@@ -8,6 +8,8 @@
 /public/css/admin.css
 /public/css/admin.css.map
 /public/favicon/*
+/public/fonts/*
+/public/js/*
 /storage/*.key
 /vendor
 /.idea
