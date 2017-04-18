@@ -32,8 +32,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
-@include ("components/call")
-@include('components/header')
-@include("components/contact")
+    <div class="main-app">
+        @include('components/header_home')
+        @include('components/banner_home')
+        @include ("components/call")
+        @include("components/contact")
+    </div>
 </body>
 </html>
