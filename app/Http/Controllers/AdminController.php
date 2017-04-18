@@ -30,4 +30,15 @@ class AdminController extends Controller
 
 		return view('admin.messages',$data);
 	}
+
+	public function getMessage($id){
+		$message = DB::table('messages')->where('id',"=",$id)->first();
+		
+		$data = [
+			'active' => 'messages',
+			'message' => $message
+		];
+
+		return view('admin.message_view',$data);
+	}
 }

@@ -11,27 +11,28 @@
                     <div class="row">
                         @foreach($messages as $message)
 
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 block-content">
                                 <div class="metric">
                                     <a class="title-new" href="/admin/messages/{{$message->id}}">
                                         {{$message->firstname}}<br>
                                         {{$message->lastname}}<br>
                                         {{$message->number}}
                                     </a>
-                                </div>
                                 <div class="row">
                                     <div class="col-xs-6">
                                         <a href="/admin/messages/{{$message->id}}">
-                                            <button class="btn btn-alert">Visualiser</button>
+                                            <button class="btn btn-alert view">Visualiser</button>
                                         </a>
                                     </div>
                                     <div class="col-xs-6">
-                                        <button to-delete="{{$message->id}}" class="btn btn-danger delete-new">
+                                        <button to-delete="{{$message->id}}" class="btn btn-danger delete">
                                             Supprimer
                                         </button>
                                     </div>
                                 </div>
-                            </div>@endforeach
+                            </div>
+                            </div>
+                        @endforeach
 
                     </div>
                 </div>
