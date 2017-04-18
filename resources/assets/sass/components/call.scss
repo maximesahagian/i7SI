@@ -4,24 +4,28 @@ div.call-us {
   position: fixed;
   bottom: 9px;
   right: 30px;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   border-radius: 36px;
   background-color: $color-orange;
 
   .call-us-image{
 
-    margin:23px auto;
+    margin:18px auto;
     width: 40%;
   }
   .phone{
     display: block;
   }
   .cross{
+    width: 15px;
+    margin-top: 23px;
     display: none;
   }
 }
  .callback--container {
+   max-height: 620px;
+   height: 70vh;
    display: none;
    position: fixed;
    bottom: 100px;
@@ -54,7 +58,7 @@ div.call-us {
    }
    .callback--inputcontainer {
 
-
+height: 60vh;
 
 
      #demo {
@@ -85,7 +89,7 @@ div.call-us {
        width: 63%;
        padding: 35px 105px;
        font-family: futura;
-       font-size: 15px;
+       font-size: 13px;
        color: #777777;
        position:relative;
        text-align: left;
