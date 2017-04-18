@@ -13,17 +13,15 @@
 
                             <div class="col-sm-4">
                                 <div class="metric">
-                                    <a class="title-new" href="">
+                                    <a class="title-new" href="/admin/messages/{{$message->id}}">
                                         {{$message->firstname}}<br>
                                         {{$message->lastname}}<br>
-                                        @if($message->number != "" && $message->number != null)
-                                                Rappeler : {{$message->number}}
-                                        @endif
+                                        {{$message->number}}
                                     </a>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-6">
-                                        <a href="">
+                                        <a href="/admin/messages/{{$message->id}}">
                                             <button class="btn btn-alert">Visualiser</button>
                                         </a>
                                     </div>
@@ -33,10 +31,9 @@
                                         </button>
                                     </div>
                                 </div>
-                            </div>
-                    </div>
+                            </div>@endforeach
 
-                    @endforeach
+                    </div>
                 </div>
             </div>
         </div>

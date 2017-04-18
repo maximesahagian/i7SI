@@ -41,7 +41,7 @@
             <div class="burger-close">
                 <span id="arrow-close" class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
             </div>
-            <a href="/"><img src="/img/simple-logo-white.png" alt="Logo" class="img-responsive logo"></a>
+            <a href="/"><img src="/images/logo.png" alt="Logo" class="img-responsive logo"></a>
         </div>
         <div class="sidebar-scroll">
             <nav>
@@ -71,10 +71,7 @@
 </div>
 <!-- END WRAPPER -->
 <!-- Javascript -->
-<script src="/js/jquery.js"></script>
 <script src="/js/jquery/jquery-2.1.0.min.js"></script>
-<script src="/js/news.js"></script>
-<script src="/js/admin.js"></script>
 </body>
 
 </html>
