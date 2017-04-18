@@ -22,7 +22,7 @@
 
 <!-- Login Container -->
 
-<img class="logo-img" src="/img/logo-white.png" alt="">
+<img class="logo-img" src="/images/logo.png" alt="">
 
 <div id="login-container">
     <!-- Login Title -->
