@@ -36,6 +36,9 @@
         @include('components/header_home')
         @include('components/banner_home')
         @include('components/group_home')
+        @include('components/key_figures')
+
+        @include('components/partners')
         @include ("components/call")
         @include("components/contact")
     </div>

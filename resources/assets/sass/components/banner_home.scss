@@ -13,9 +13,12 @@ section.banner-home{
       color: #fff;
       h2{
         font-size: 60px;
+        font-family: $font-Futura-Medium;
       }
       p{
         margin-top: 50px;
+        font-family: $font-Chaparral-Pro-Regular;
+        padding-right: 40%;
       }
       .discover{
         margin-top: 50px;
@@ -39,6 +42,7 @@ section.banner-home{
           }
         }
         span{
+          font-family: $font-Futura-Medium;
           position: relative;
           bottom: 20px;
           left: 20px;

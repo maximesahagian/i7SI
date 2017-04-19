@@ -29,6 +29,7 @@ header{
         position: relative;
         top: 25px;
         font-size: 13px;
+        font-family: $font-Futura-Medium;
       }
       margin-left: 40px;
       padding: 0px 10px;
@@ -36,6 +37,9 @@ header{
         border-bottom: 5px solid $color-orange;
         padding-bottom: 5px;
         box-sizing: border-box;
+        a{
+          color: $color-orange;
+        }
       }
       &.active{
         border-bottom: 5px solid $color-orange;

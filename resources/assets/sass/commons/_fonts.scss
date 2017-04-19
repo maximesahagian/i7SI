@@ -1,0 +1,21 @@
+$base-path-font: '../../fonts/';
+
+@mixin registerFont($name) {
+  $fontpath: "#{$base-path-font}#{$name}/#{$name}";
+  @font-face {
+    font-family: "#{$name}";
+    src: url('#{$fontpath}.eot');
+    src: url('#{$fontpath}.eot?#iefix') format('embedded-opentype'),
+    url('#{$fontpath}.woff') format('woff'),
+    url('#{$fontpath}.ttf') format('truetype'),
+    url('#{$fontpath}.svg') format('svg');
+  }
+}
+
+$font-Futura-Bold: "Futura-Bold";
+$font-Futura-Medium: "Futura-Medium";
+$font-Chaparral-Pro-Regular: "Chaparral-Pro-Regular";
+
+@include registerFont($font-Futura-Bold);
+@include registerFont($font-Futura-Medium);
+@include registerFont($font-Chaparral-Pro-Regular);

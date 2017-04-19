@@ -1,0 +1,42 @@
+section.partners {
+  width: 100%;
+  .container {
+    text-align: center;
+    padding: 50px 60px;
+    .partenaires {
+      display: inline-block;
+      margin-left: 50px;
+    }
+    .partenaire-1 {
+      background-image: url("/images/partenaire-1.png");
+      width: 122px;
+      height: 81px;
+      margin-left: 0;
+    }
+    .partenaire-2 {
+      background-image: url("/images/partenaire-2.png");
+      width: 72px;
+      height: 80px;
+    }
+    .partenaire-3 {
+      background-image: url("/images/partenaire-3.png");
+      width: 142px;
+      height: 80px;
+    }
+    .partenaire-4 {
+      background-image: url("/images/partenaire-4.png");
+      width: 164px;
+      height: 81px;
+    }
+    .partenaire-5 {
+      background-image: url("/images/partenaire-5.png");
+      width: 204px;
+      height: 61px;
+    }
+    .partenaire-6 {
+      background-image: url("/images/partenaire-6.png");
+      width: 166px;
+      height: 80px;
+    }
+  }
+}

@@ -5,14 +5,22 @@ $color-lightgrey: #E3E3E3;
 
 @import "./commons/reset";
 
+@import "./commons/fonts";
+
+@import "./commons/sizes";
+
+@import "./commons/mixins";
+
 //IMPORTER TOUS LES FICHIERS SCSS
 @import "components/header";
 @import "components/banner_home";
 @import "components/group_home";
+@import "components/key_figures";
+@import "components/partners";
 @import "components/call";
 
 body .main-app{
-  max-width: 1200px;
+  max-width: 1280px;
   width: 100%;
   background-color: #fff;
   margin: 0 auto;

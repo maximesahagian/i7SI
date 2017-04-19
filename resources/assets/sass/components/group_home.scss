@@ -5,7 +5,7 @@ section.group{
     margin-top: 100px;
     margin-left: 8%;
     padding-left: 20px;
-    border-left: 7.5px solid $color-orange;
+    font-family: $font-Futura-Medium;
   }
   .history{
     height: 500px;
@@ -29,12 +29,14 @@ section.group{
           padding: 60px 30px;
           .history-title{
             font-size: 25px;
+            font-family: $font-Futura-Medium;
           }
           .history-text{
             color: #9B9B9B;
             font-size: 15px;
             margin-top: 30px;
             line-height: 25px;
+            font-family: $font-Chaparral-Pro-Regular;
           }
 
           .learn-more{
@@ -59,9 +61,11 @@ section.group{
               }
             }
             span{
+              font-family: $font-Futura-Bold;
               position: relative;
               bottom: 20px;
               left: 20px;
+              letter-spacing: 0.5px;
             }
           }
         }
@@ -111,6 +115,7 @@ section.group{
               display: inline-block;
               text-align: right;
               float: left;
+              font-family: $font-Futura-Medium;
             }
             .expertise-pagination-container{
               float: right;
@@ -150,14 +155,11 @@ section.group{
               font-size: 15px;
               margin-top: 30px;
               line-height: 25px;
+              font-family: $font-Chaparral-Pro-Regular;
             }
           }
-
         }
-
-
       }
     }
   }
-
 }
