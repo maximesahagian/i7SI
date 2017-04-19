@@ -5,7 +5,7 @@
              data-from="0"
              data-to="1"
              data-easing="easeinout"
-             data-translatex="80">
+             data-translatex="150">
             <h3 class="title-key">ACTUALITÉS</h3>
 
         </div>

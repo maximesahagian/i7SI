@@ -6,7 +6,7 @@
              data-from="0"
              data-to="1"
              data-easing="easeinout"
-             data-translatex="80">
+             data-translatex="150">
             <h2 class="title-group ">LE GROUPE U&D</h2>
         </div>
     </div>
@@ -19,7 +19,7 @@
                          data-from="0"
                          data-to="1"
                          data-easing="easeinout"
-                         data-translatey="-110">
+                         data-translatey="-130">
                         <h4 class="history-title">Notre histoire</h4>
                         <p class="history-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                         <div class="learn-more">
