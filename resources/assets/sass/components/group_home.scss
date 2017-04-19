@@ -20,52 +20,56 @@ section.group{
         background-image: url('/images/history_background.jpg');
         height: 100%;
         width: 100%;
-        .history-content{
-          background-color: #fff;
-          width: 500px;
+        .scrollme {
           position: absolute;
-          left: 8%;
-          top: 70px;
-          padding: 60px 30px;
-          .history-title{
-            font-size: 25px;
-            font-family: $font-Futura-Medium;
-          }
-          .history-text{
-            color: #9B9B9B;
-            font-size: 15px;
-            margin-top: 30px;
-            line-height: 25px;
-            font-family: $font-Chaparral-Pro-Regular;
-          }
-
-          .learn-more{
-            margin-top: 50px;
-            cursor: pointer;
-            .arrow-right{
-              display: inline-block;
-              height: 50px;
-              width: 50px;
-              border: 1px solid $color-orange;
-              border-radius: 50%;
-              position: relative;
-              &:before{
-                content: "";
-                position: absolute;
-                top: 18px;
-                left: 21px;
-                width: 9px;
-                height: 15.5px;
-                background-image: url("/images/arrow_right.png");
-                background-size: cover;
-              }
+          left:8%;
+          .history-content {
+            background-color: #fff;
+            width: 500px;
+            position: absolute;
+            left: 8%;
+            top: 200px;
+            padding: 60px 30px;
+            .history-title {
+              font-size: 25px;
+              font-family: $font-Futura-Medium;
             }
-            span{
-              font-family: $font-Futura-Bold;
-              position: relative;
-              bottom: 20px;
-              left: 20px;
-              letter-spacing: 0.5px;
+            .history-text {
+              color: #9B9B9B;
+              font-size: 15px;
+              margin-top: 30px;
+              line-height: 25px;
+              font-family: $font-Chaparral-Pro-Regular;
+            }
+
+            .learn-more {
+              margin-top: 50px;
+              cursor: pointer;
+              .arrow-right {
+                display: inline-block;
+                height: 50px;
+                width: 50px;
+                border: 1px solid $color-orange;
+                border-radius: 50%;
+                position: relative;
+                &:before {
+                  content: "";
+                  position: absolute;
+                  top: 18px;
+                  left: 21px;
+                  width: 9px;
+                  height: 15.5px;
+                  background-image: url("/images/arrow_right.png");
+                  background-size: cover;
+                }
+              }
+              span {
+                font-family: $font-Futura-Bold;
+                position: relative;
+                bottom: 20px;
+                left: 20px;
+                letter-spacing: 0.5px;
+              }
             }
           }
         }
