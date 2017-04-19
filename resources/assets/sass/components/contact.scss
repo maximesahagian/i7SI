@@ -108,4 +108,7 @@ section.contact{
       width: 80%;
     }
   }
+  @include phone(){
+    margin-top: 0px;
+  }
 }
