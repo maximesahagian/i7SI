@@ -1,7 +1,8 @@
 header{
   height: 60px;
   width: 100%;
-  background-color: #fff;
+  //background-color: #fff;
+  position: absolute;
   .logo, .menu, .menu li{
     display: inline-block;
     height: 100%;
@@ -9,22 +10,23 @@ header{
   }
   .logo{
     width: 140px;
-    background-color: #313131;
+
     text-align: center;
     img{
-      width: 45px;
+      width: 34px;
       position: relative;
-      top: 10px;
+      top: 22px;
+      left: 35px;
     }
   }
   .menu{
     margin-left:60px;
     li{
-      text-transform: uppercase;
+      text-transform: capitalize;
       position: relative;
       cursor: pointer;
       a{
-        color: #4A4A4A;
+        color: white;
         text-decoration: none;
         position: relative;
         top: 25px;
