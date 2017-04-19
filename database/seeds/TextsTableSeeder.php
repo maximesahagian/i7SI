@@ -1,7 +1,6 @@
 <?php
 
-use IlluminateDatabaseSeeder;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Seeder;
 
 class TextsTableSeeder extends Seeder
 {
