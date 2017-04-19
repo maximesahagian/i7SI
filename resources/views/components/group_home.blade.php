@@ -82,6 +82,7 @@
         dots:true,
         vertical: true,
         draggable: true,
+        verticalSwiping: true,
         appendDots: $('.dotsemplacement'),
 
 
