@@ -1,3 +1,58 @@
 section.contact{
+  background-image: url('/images/contact_background.png');
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  .title{
+    color: #fff;
+    font-family: $font-Futura-Medium;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  padding-right: 15%;
+  padding-left: 15%;
 
+  input, textarea{
+    border: none;
+    padding: 0px 10px;
+    outline: none;
+    color: #000;
+    height: 50px;
+    font-family: $font-Futura-Medium;
+    color: #4A4A4A;
+    font-size: 16px;
+  }
+
+  #nom_contact, #prenom_contact{
+    width: calc(50% - 35px);
+    display: inline-block;
+    float: left;
+    margin-top: 70px;
+  }
+
+  #prenom_contact{
+    margin-left: 30px;
+  }
+
+  #email_contact, #objet_contact, #message_contact{
+    width: calc(100% - 20px);
+    margin-top: 20px;
+  }
+
+  #message_contact{
+    padding-top: 10px;
+    height: auto;
+  }
+
+  #submit_contact{
+    width: 30%;
+    margin-left: 70%;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    font-family: $font-Futura-Medium;
+    font-size: 16px;
+  }
 }

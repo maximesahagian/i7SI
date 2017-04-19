@@ -15,9 +15,7 @@ section.key-figures {
       display: inline-block;
       background-color: #313131;
       float: left;
-      position: relative;
       cursor: pointer;
-      //background-image: url('/images/login-background.jpg');
 
       .key-block-content {
         position: absolute;
@@ -98,7 +96,6 @@ section.key-figures {
     .arrow-right-block {
       background-image: url('/images/actu_right_arrow.jpg');
       background-size: cover;
-      position: relative;
       background-size: 100% 100%;
       transition: background-size 1s;
       background-position: 50% 50%;
@@ -122,7 +119,6 @@ section.key-figures {
     .gray-gradiant-block {
       background-image: url('/images/gray_gradiant_block.jpg');
       background-size: cover;
-      position: relative;
       background-position: 50% 50%;
       background-size: 100% 100%;
       transition: background-size 1s;

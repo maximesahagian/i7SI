@@ -17,8 +17,10 @@ $color-lightgrey: #E3E3E3;
 @import "components/group_home";
 @import "components/key_figures";
 @import "components/partners";
+@import "components/contact.scss";
 @import "components/call";
 @import "components/contact";
+@import "components/footer";
 
 body .main-app{
   max-width: 1280px;

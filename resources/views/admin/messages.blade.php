@@ -16,7 +16,6 @@
                                     <a class="title-new" href="/admin/messages/{{$message->id}}">
                                         {{$message->firstname}}<br>
                                         {{$message->lastname}}<br>
-                                        {{$message->number}}
                                     </a>
                                 <div class="row">
                                     <div class="col-xs-6">

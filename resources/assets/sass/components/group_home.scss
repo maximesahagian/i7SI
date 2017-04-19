@@ -48,7 +48,7 @@ section.group{
                 display: inline-block;
                 height: 50px;
                 width: 50px;
-                border: 1px solid $color-orange;
+                background-color: $color-orange;
                 border-radius: 50%;
                 position: relative;
                 &:before {
@@ -68,6 +68,7 @@ section.group{
                 bottom: 20px;
                 left: 20px;
                 letter-spacing: 0.5px;
+                color: $color-orange;
               }
             }
           }

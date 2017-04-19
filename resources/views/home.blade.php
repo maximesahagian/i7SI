@@ -33,14 +33,14 @@
 </head>
 <body>
     <div class="main-app">
+        @include ("components/call")
         @include('components/header_home')
         @include('components/banner_home')
         @include('components/group_home')
         @include('components/key_figures')
-
         @include('components/partners')
-        @include ("components/call")
         @include("components/contact")
+        @include("components/footer")
     </div>
 </body>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
