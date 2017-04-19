@@ -17,7 +17,6 @@ class IndexController extends Controller
 				'firstname' => $request['firstname'],
 				'lastname' => $request['lastname'],
 				'email' => $request['email'],
-				'number' => $request['number'],
 				'object' => $request['object'],
 				'message' => $request['message']
 			]

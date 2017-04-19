@@ -25,10 +25,7 @@
     $("#demo").intlTelInput();
 
     $('.call-us').click(function(){
-
-
-
-        $('.callback--container').show();
+        $('.callback--container').fadeIn();
         $('.call-us').addClass('bounce');
     setTimeout(function () {
         $('.call-us').removeClass('bounce');
@@ -36,12 +33,12 @@
         if($('.phone').css('display')== 'none'){
 
 
-            $('.callback--container').hide();
+            $('.callback--container').fadeOut();
             $('.cross').css({display : 'none'});
             $('.phone').css({display : 'block'});
         }else{
 
-            $('.callback--container').show();
+            $('.callback--container').fadeIn();
             $('.phone').css({display : 'none'});
             $('.cross').css({display : 'block'});
         }
