@@ -1,6 +1,15 @@
-<section class="contact">
+<section class="contact ">
+<div class="scrollme">
+    <div class="animateme"
+         data-when="enter"
+         data-from="0"
+         data-to="1"
+         data-easing="easeinout"
+         data-translatex="150">
+        <h2 class="title">UNE QUESTION, UN PROJET ?</h2>
 
-    <h2 class="title">UNE QUESTION, UN PROJET ?</h2>
+    </div>
+</div>
 
     <input type="text" required placeholder="Nom" name="nom" id="nom_contact">
     <input type="text" required placeholder="Prénom" name="prenom" id="prenom_contact">

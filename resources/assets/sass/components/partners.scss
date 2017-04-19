@@ -31,40 +31,50 @@ section.partners {
           vertical-align: middle;
         }
       }
+    }
 
-        .partenaires {
-          display: inline-block;
-          margin-top: 55px;
-        }
-        .partenaire-1 {
-          background-image: url("/images/partenaire-1.png");
-          width: 122px;
-          height: 81px;
-          margin-left: 0;
-        }
-        .partenaire-2 {
-          background-image: url("/images/partenaire-2.png");
-          width: 72px;
-          height: 80px;
-        }
-        .partenaire-3 {
-          background-image: url("/images/partenaire-3.png");
-          width: 142px;
-          height: 80px;
-        }
-        .partenaire-4 {
-          background-image: url("/images/partenaire-4.png");
-          width: 164px;
-          height: 81px;
-        }
-        .partenaire-5 {
-          background-image: url("/images/partenaire-5.png");
-          width: 221px;
-          height: 61px;
-          background-size: contain;
-        }
-      }
+    .partenaires {
+      display: inline-block;
+      transition: background-size 1s;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+    .partenaire-1 {
+      background-image: url("/images/partenaire-1.png");
+      background-size: 30% 30%;
+    }
+    .partenaire-1:hover {
+      background-size: 35% 35%;
+    }
+    .partenaire-2 {
+      background-image: url("/images/partenaire-2.png");
+      background-size: 22% 44%;
 
+    }
+    .partenaire-2:hover {
+      background-size: 24% 48%;
+    }
+    .partenaire-3 {
+      background-image: url("/images/partenaire-3.png");
+      background-size: 30% 30%;
+    }
+    .partenaire-3:hover {
+      background-size: 35% 35%;
+    }
+    .partenaire-4 {
+      background-image: url("/images/partenaire-4.png");
+      background-size: 30% 30%;
+    }
+    .partenaire-4:hover {
+      background-size: 35% 35%;
+    }
+    .partenaire-5 {
+      background-image: url("/images/partenaire-5.png");
+      background-size: 40% 20%;
+    }
+    .partenaire-5:hover {
+      background-size: 44% 22%;
+    }
 
     .bloc-container:nth-of-type(4), .bloc-container:nth-of-type(5), .bloc-container:nth-of-type(6) {
       border-top: none;
