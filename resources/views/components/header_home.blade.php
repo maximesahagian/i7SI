@@ -10,4 +10,7 @@
         <li><a href="#">partenaires</a></li>
         <li><a href="#">contact</a></li>
     </ul>
+    <div class="burger">
+        <div class="line"></div>
+    </div>
 </header>

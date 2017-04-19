@@ -1,5 +1,6 @@
 section.banner-home{
   height: 100%;
+  min-height: 670px;
   background-color: #000;
   background-image: url('/images/banner_background.jpg');
   background-size: cover;
@@ -11,15 +12,44 @@ section.banner-home{
       vertical-align: middle;
       padding-left: 200px;
       color: #fff;
+      @include small-device(){
+        padding-left: 100px;
+      }
+      @include phone(){
+        padding-right: 50px;
+      }
+      @include very-small-device(){
+        padding: 30px;
+      }
+
       h2{
         font-size: 60px;
         font-family: $font-Futura-Medium;
+        padding-right: 23%;
+        @include small-device(){
+          padding-right: 80px;
+        }
+        @include phone(){
+          font-size: 50px;
+          padding-right: 0px;
+        }
+        @include very-small-device(){
+          padding: 0;
+          font-size: 30px;
+        }
       }
       p{
         margin-top: 50px;
         font-family: $font-Chaparral-Pro-Regular;
         padding-right: 40%;
         line-height: 30px;
+        @include phone(){
+          padding-right: 0px;
+        }
+        @include very-small-device(){
+          font-size: 15px;
+          padding-right: 0px;
+        }
       }
       .discover{
         margin-top: 50px;

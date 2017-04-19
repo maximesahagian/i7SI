@@ -2,8 +2,6 @@ $color-orange: #FF8E2B;
 $color-darkgrey: #999999;
 $color-lightgrey: #E3E3E3;
 
-
-
 @import "./commons/reset";
 
 @import "./commons/fonts";
@@ -13,10 +11,6 @@ $color-lightgrey: #E3E3E3;
 @import "./commons/mixins";
 
 //IMPORTER TOUS LES FICHIERS SCSS
-
-html, body, .main-app{
-  height: 100%;
-}
 @import "components/header";
 @import "components/banner_home";
 @import "components/group_home";
@@ -32,4 +26,12 @@ body .main-app{
   width: 100%;
   background-color: #fff;
   margin: 0 auto;
+}
+
+html, body, .main-app{
+  height: 100%;
+}
+
+body{
+  overflow-x: hidden;
 }
