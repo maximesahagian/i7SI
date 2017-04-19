@@ -7,6 +7,8 @@ $color-lightgrey: #E3E3E3;
 
 @import "./commons/fonts";
 
+@import "./commons/sizes";
+
 //IMPORTER TOUS LES FICHIERS SCSS
 @import "components/header";
 @import "components/banner_home";
