@@ -95,6 +95,9 @@ header{
         border-bottom: 5px solid $color-orange;
         padding-bottom: 5px;
         box-sizing: border-box;
+        a{
+          color: $color-orange;
+        }
       }
     }
   }

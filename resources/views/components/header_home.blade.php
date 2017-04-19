@@ -3,7 +3,7 @@
         <img src="/images/logo_header.png" alt="">
     </div>
     <ul class="menu">
-        <li><a href="#">accueil</a></li>
+        <li class="active"><a href="#">accueil</a></li>
         <li><a href="#">à propos</a></li>
         <li><a href="#">savoir faire</a></li>
         <li><a href="#">chiffres clés</a></li>
