@@ -4,8 +4,17 @@ body{
     overflow-x: hidden;
   }
 }
-.scrollme{ max-width: 500px;}
-.animateme{ max-width: 500px;}
+.scrollme{
+  position:relative;
+  max-width: 200px;
+}
+.animateme{
+  position:relative;
+  max-width: 100px;
+@include very-small-device(){
+
+}
+}
 section.key-figures {
   margin-top: 100px;
   display: inline-block;
