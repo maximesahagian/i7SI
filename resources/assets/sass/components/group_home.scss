@@ -4,8 +4,8 @@ section.group{
     color: #000;
     margin-top: 100px;
     padding-left: 20px;
-    width : 500px;
     font-family: $font-Futura-Medium;
+    display: inline-block;
   }
   .history{
     height: 500px;
@@ -13,6 +13,7 @@ section.group{
     position :relative;
     @include very-small-device(){
       height: auto;
+      font-size: 35px;
     }
     .history-background{
       height: 100%;
@@ -22,12 +23,14 @@ section.group{
       @include small-device(){
         height: 100%;
         width: 100%;
-        padding-left: 25%;
+        padding-left: 0%;
          padding-right: 0%;
       }
       @include very-small-device(){
         padding: 0;
         height: 370px;
+        padding-left: 0%;
+        padding-right: 0%;
       }
       .history-background-image{
         background-image: url('/images/history_background.jpg');
@@ -303,6 +306,7 @@ section.group{
         }
         @include very-small-device(){
           width: 100%;
+          z-index: -3;
         }
         filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=25);
         .expertise-text-container{
@@ -343,9 +347,9 @@ section.group{
               h5{
                 color:$color-lightgrey;
                 font-size: 13px;
-                position: relative;
-                left: 30%;
-                top: 14px;
+                position: absolute;
+                left: 75%;
+                top: 73px;
                 @include small-device(){
                  color: $color-orange;
                 }

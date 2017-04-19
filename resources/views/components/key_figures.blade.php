@@ -1,11 +1,6 @@
 <section class="key-figures">
     <div class="scrollme">
-        <div class="animateme"
-             data-when="enter"
-             data-from="0"
-             data-to="1"
-             data-easing="easeinout"
-             data-translatex="150">
+        <div class="animateme">
             <h3 class="title-key">ACTUALITÉS</h3>
 
         </div>

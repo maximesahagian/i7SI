@@ -1,11 +1,6 @@
 <section class="group ">
     <div class="scrollme">
-        <div class="animateme"
-             data-when="enter"
-             data-from="0"
-             data-to="1"
-             data-easing="easeinout"
-             data-translatex="150">
+        <div class="animateme">
             <h2 class="title-group ">{{$title}}</h2>
         </div>
     </div>
