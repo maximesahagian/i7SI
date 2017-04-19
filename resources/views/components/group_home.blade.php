@@ -668,7 +668,7 @@
         }
     });
 
-    $('.slidercarousel').slick({
+    $('.slidercarousel1').slick({
         infinite: true,
         slidesToShow: 1,
         accessibility: true,
@@ -677,11 +677,27 @@
         vertical: true,
         draggable: true,
         verticalSwiping: true,
-        appendDots: $('.dotsemplacement'),
+        appendDots: $('.dotsemplacement1'),
+    });
+    $('.slidercarousel2').slick({
+        infinite: true,
+        slidesToShow: 1,
+        accessibility: true,
+        arrows: false,
+        dots: true,
+        vertical: true,
+        draggable: true,
+        verticalSwiping: true,
+        appendDots: $('.dotsemplacement2'),
     });
     $('.dotsemplacement button').text(' ')
     var textArray = [$('.paragraph-1').text(), $('.paragraph-2').text(), $('.paragraph-3').text()];
-    $('.slidercarousel').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    $('.slidercarousel1').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        $('.bottom p').text(textArray[nextSlide]).animate('slow');
+        var realNumber = nextSlide + 1;
+        $('.expertise-pagination-container h4').text('0' + realNumber);
+    });
+    $('.slidercarousel2').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         $('.bottom p').text(textArray[nextSlide]).animate('slow');
         var realNumber = nextSlide + 1;
         $('.expertise-pagination-container h4').text('0' + realNumber);
