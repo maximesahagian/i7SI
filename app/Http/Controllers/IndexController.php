@@ -8,7 +8,12 @@ class IndexController extends Controller
 {
 	public function getIndex()
 	{
-		return view('home');
+		$texts = DB::table('texts')->get();
+		$data = [
+			"texts" => $texts
+		];
+
+		return view('home', $data);
 	}
 
 	public function addMessage(Request $request){
