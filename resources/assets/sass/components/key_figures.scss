@@ -10,7 +10,9 @@ section.key-figures {
   margin-top: 100px;
   display: inline-block;
   width: 100%;
-
+  @include phone(){
+    margin-top: 0;
+  }
   .title-key {
     font-size: 40px;
     color: #000;
@@ -19,6 +21,9 @@ section.key-figures {
     padding-left: 20px;
 
     font-family: $font-Futura-Medium;
+    @include phone(){
+      margin-top: 0;
+    }
   }
   .key-container {
     display: inline-block;

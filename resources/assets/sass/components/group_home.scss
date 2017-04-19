@@ -307,7 +307,9 @@ section.group{
         filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=25);
         .expertise-text-container{
           padding: 2% 4%;
-
+@include very-small-device(){
+  height: 0;
+}
           .top{
             h3{
               font-size: 25px;
@@ -404,6 +406,9 @@ section.group{
   -webkit-tap-highlight-color: transparent;
   width:80%;
   float:left;
+  @include phone(){
+    width:86%;
+  }
   @include very-small-device(){
     width: 100%;
   }

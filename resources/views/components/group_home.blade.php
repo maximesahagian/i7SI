@@ -678,6 +678,32 @@
         draggable: true,
         verticalSwiping: true,
         appendDots: $('.dotsemplacement1'),
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    verticalSwiping: false,
+                    vertical: false
+
+
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
     $('.slidercarousel2').slick({
         infinite: true,
@@ -689,8 +715,39 @@
         draggable: true,
         verticalSwiping: true,
         appendDots: $('.dotsemplacement2'),
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    verticalSwiping: true,
+                    slidesToShow: 3,
+
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
-    $('.dotsemplacement button').text(' ')
+    $('.dotsemplacement1 button').text(' ');
+    $('.dotsemplacement2 button').text(' ');
+    $( window ).resize(function() {
+        $('.dotsemplacement1 button').text(' ');
+        $('.dotsemplacement2 button').text(' ');
+    });
+
     var textArray = [$('.paragraph-1').text(), $('.paragraph-2').text(), $('.paragraph-3').text()];
     $('.slidercarousel1').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         $('.bottom p').text(textArray[nextSlide]).animate('slow');
