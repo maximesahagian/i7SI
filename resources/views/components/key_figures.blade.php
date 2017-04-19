@@ -1,5 +1,15 @@
 <section class="key-figures">
-    <h3 class="title-key">LES CHIFFRES CLÉS & ACTUALITÉS</h3>
+    <div class="scrollme">
+        <div class="animateme"
+             data-when="enter"
+             data-from="0"
+             data-to="1"
+             data-easing="easeinout"
+             data-translatex="80">
+            <h3 class="title-key">ACTUALITÉS</h3>
+
+        </div>
+    </div>
     <div class="key-container">
         <div class="key-block black-block">
             <div class="key-block-content">
