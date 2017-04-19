@@ -4,57 +4,67 @@ section.partners {
   .container {
     display: inline-block;
     width: 100%;
-    .title-partners {
-      font-size: 20px;
-      color: #000;
-      font-family: $font-Futura-Medium;
-      text-transform: uppercase;
-    }
     .bloc-container {
-      width: calc(100%/3);
+      width: calc(100% / 3);
       display: inline-block;
       float: left;
-      height: 100px;
+      height: 200px;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       padding: 1px;
       border: 1px solid #e5e5e5;
-      .partenaires {
-        display: inline-block;
+      text-align: center;
+
+      .bloc-table {
+        display: table;
+        height: 100%;
+        width: 100%;
+
+        .title-partners {
+          font-size: 20px;
+          color: #000;
+          font-family: $font-Futura-Medium;
+          text-transform: uppercase;
+          display: table-cell;
+          vertical-align: middle;
+        }
       }
-      .partenaire-1 {
-        background-image: url("/images/partenaire-1.png");
-        width: 122px;
-        height: 81px;
-        margin-left: 0;
+
+        .partenaires {
+          display: inline-block;
+          margin-top: 55px;
+        }
+        .partenaire-1 {
+          background-image: url("/images/partenaire-1.png");
+          width: 122px;
+          height: 81px;
+          margin-left: 0;
+        }
+        .partenaire-2 {
+          background-image: url("/images/partenaire-2.png");
+          width: 72px;
+          height: 80px;
+        }
+        .partenaire-3 {
+          background-image: url("/images/partenaire-3.png");
+          width: 142px;
+          height: 80px;
+        }
+        .partenaire-4 {
+          background-image: url("/images/partenaire-4.png");
+          width: 164px;
+          height: 81px;
+        }
+        .partenaire-5 {
+          background-image: url("/images/partenaire-5.png");
+          width: 221px;
+          height: 61px;
+          background-size: contain;
+        }
       }
-      .partenaire-2 {
-        background-image: url("/images/partenaire-2.png");
-        width: 72px;
-        height: 80px;
-      }
-      .partenaire-3 {
-        background-image: url("/images/partenaire-3.png");
-        width: 142px;
-        height: 80px;
-      }
-      .partenaire-4 {
-        background-image: url("/images/partenaire-4.png");
-        width: 164px;
-        height: 81px;
-      }
-      .partenaire-5 {
-        background-image: url("/images/partenaire-5.png");
-        width: 204px;
-        height: 61px;
-      }
-      .partenaire-6 {
-        background-image: url("/images/partenaire-6.png");
-        width: 166px;
-        height: 80px;
-      }
-    }
+
+
     .bloc-container:nth-of-type(4), .bloc-container:nth-of-type(5), .bloc-container:nth-of-type(6) {
       border-top: none;
     }

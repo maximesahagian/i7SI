@@ -1,7 +1,9 @@
 <section class="partners">
     <div class="container">
         <div class="bloc-container">
-            <h2 class="title-partners">Nos partenaires</h2>
+            <div class="bloc-table">
+                <h2 class="title-partners">Nos partenaires</h2>
+            </div>
         </div>
         <div class="bloc-container">
             <div class="partenaires partenaire-1"></div>
