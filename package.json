@@ -17,8 +17,10 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
+    "elixir-tinypng": "^1.0.2",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.2.2",
+    "gulp-imagemin": "^3.2.0",
     "laravel-elixir": "^6.0.0-15",
     "scrollme": "^0.1.1"
   }
