@@ -1,3 +1,23 @@
+<style>.wrapper
+    {
+        max-width:30em;
+        margin:2em auto;
+    }
+
+    .scrollme
+    {
+        padding:2em;
+        border:1em solid #e8e8e8;
+        perspective:600px;
+    }
+
+    .animateme
+    {
+        width:80%;
+        padding:10%;
+        background:#e8e8e8;
+        transform-origin:center center center;
+    }</style>
 <section class="group">
     <h2 class="title-group">LE GROUPE U&D</h2>
 
@@ -15,6 +35,7 @@
             </div>
         </div>
     </div>
+
 
 
     <div class="expertise-content">
@@ -46,4 +67,6 @@
             </div>
         </div>
     </div>
+
 </section>
+-
