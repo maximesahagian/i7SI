@@ -40,7 +40,9 @@
 text-align: center;
   display: table-cell;
   vertical-align: middle;">
-        <img src="/images/loader.gif" alt="">
+        <img style="width: 20%;
+    position: relative;
+    top: 25%;" src="/images/loader.gif" alt="">
     </div>
     <div class="main-app">
         @include ("components/call")
