@@ -3,6 +3,7 @@ $color-darkgrey: #999999;
 $color-lightgrey: #E3E3E3;
 
 
+
 @import "./commons/reset";
 
 @import "./commons/fonts";
@@ -12,6 +13,10 @@ $color-lightgrey: #E3E3E3;
 @import "./commons/mixins";
 
 //IMPORTER TOUS LES FICHIERS SCSS
+
+html, body, .main-app{
+  height: 100%;
+}
 @import "components/header";
 @import "components/banner_home";
 @import "components/group_home";
