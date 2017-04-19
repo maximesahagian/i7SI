@@ -1,0 +1,3 @@
+<section class="partners">
+
+</section>

@@ -1,8 +1,15 @@
 /node_modules
 /public/storage
 /public/hot
-/public/css/app.css
+/public/css/*
+/public/build/*
+/public/images/*
 /public/css/app.css.map
+/public/css/admin.css
+/public/css/admin.css.map
+/public/favicon/*
+/public/fonts/*
+/public/js/*
 /storage/*.key
 /vendor
 /.idea
