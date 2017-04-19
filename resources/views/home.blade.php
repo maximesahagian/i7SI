@@ -36,7 +36,7 @@
     width: 100%;
     position: fixed;
     z-index: 7;
-    background-color: #fff;
+    background-color: #FFFDFF;
 text-align: center;
   display: table-cell;
   vertical-align: middle;">
