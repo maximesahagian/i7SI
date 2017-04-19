@@ -20,6 +20,8 @@ section.contact{
   }
 
   input, textarea{
+    -webkit-appearance: none;
+    border-radius: 0;
     border: none;
     padding: 0px 10px;
     outline: none;
