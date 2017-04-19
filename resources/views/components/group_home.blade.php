@@ -29,20 +29,70 @@
                 </div>
             </div>
         </div>
+        <div class="scrollme scrollme-mobile">
+            <div class="history-content">
+                <h4 class="history-title">{{$our_history_title}}</h4>
+                <p class="history-text">{{$our_history_paragraph}}</p>
+                <div class="learn-more">
+                    <div class="arrow-right"></div>
+                    <span>{{$our_history_cta}}</span>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <div class="expertise-content">
+    <div class="expertise-content phone ">
         <div class="expertise">
-            <div class="slider">
 
-                <div class="slidercarousel">
+            <div class="our-expertise">
+                <div class="expertise-text-container">
+                    <div class="top">
+                        <h3>Notre savoir faire </h3>
+                        <div class="expertise-pagination-container">
+                            <h4>
+                                01
+                            </h4>
+                            <hr class="pagination-hr">
+                            <h5>
+                                03
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="bottom bottom1">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur.</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="slider">
+                <div class="slidercarousel slidercarousel2">
                     <div class="image"><img src="/images/slider_1.jpg" alt=""></div>
                     <div class="image"><img src="/images/slider_1.jpg" alt=""></div>
                     <div class="image"><img src="/images/slider_1.jpg" alt=""></div>
                 </div>
+                <div class="dotsemplacement dotsemplacement2"></div>
             </div>
-            <div class="dotsemplacement"></div>
+        </div>
+    </div>
+    <div class="expertise-content desktop">
+        <div class="expertise">
+            <div class="slider">
+
+                <div class="slidercarousel slidercarousel1">
+                    <div class="image"><img src="/images/slider_1.jpg" alt=""></div>
+                    <div class="image"><img src="/images/slider_1.jpg" alt=""></div>
+                    <div class="image"><img src="/images/slider_1.jpg" alt=""></div>
+                </div>
+                <div class="dotsemplacement dotsemplacement1"></div>
+            </div>
             <div class="our-expertise">
                 <div class="expertise-text-container">
                     <div class="top">
@@ -617,6 +667,7 @@
             return a
         }
     });
+
     $('.slidercarousel').slick({
         infinite: true,
         slidesToShow: 1,

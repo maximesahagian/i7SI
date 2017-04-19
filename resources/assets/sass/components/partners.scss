@@ -5,6 +5,9 @@ section.partners {
   .container {
     display: inline-block;
     width: 92%;
+    @include phone() {
+      width: 100%;
+    }
     .bloc-container {
       width: calc(100% / 3);
       display: inline-block;
@@ -26,6 +29,13 @@ section.partners {
         text-align: center;
       }
 
+      @include very-small-device() {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+      }
+
+
       .bloc-table {
         display: table;
         height: 100%;
@@ -38,13 +48,6 @@ section.partners {
           text-transform: uppercase;
           display: table-cell;
           vertical-align: middle;
-
-          @include phone() {
-            font-size: 15px;
-          }
-
-          @include very-small-device(){
-            font-size: 12px;          }
         }
       }
     }
@@ -54,25 +57,41 @@ section.partners {
       transition: background-size 1s;
       background-position: 50% 50%;
       background-repeat: no-repeat;
+
     }
     .partenaire-1 {
       background-image: url("/images/partenaire-1.png");
       background-size: 30% 30%;
+      @include very-small-device(){
+        background-size: 25% 50%;
+      }
     }
     .partenaire-1:hover {
       background-size: 35% 35%;
+      @include very-small-device(){
+        background-size: 26% 54%;
+      }
     }
     .partenaire-2 {
       background-image: url("/images/partenaire-2.png");
       background-size: 22% 44%;
+      @include very-small-device(){
+        background-size: 24% 65%;
+      }
 
     }
     .partenaire-2:hover {
       background-size: 24% 48%;
+      @include very-small-device(){
+        background-size: 26% 69%;
+      }
     }
     .partenaire-3 {
       background-image: url("/images/partenaire-3.png");
       background-size: 30% 30%;
+      @include very-small-device(){
+        display: none;
+      }
     }
     .partenaire-3:hover {
       background-size: 35% 35%;
@@ -80,6 +99,9 @@ section.partners {
     .partenaire-4 {
       background-image: url("/images/partenaire-4.png");
       background-size: 30% 30%;
+      @include very-small-device(){
+        display: none;
+      }
     }
     .partenaire-4:hover {
       background-size: 35% 35%;
@@ -87,9 +109,29 @@ section.partners {
     .partenaire-5 {
       background-image: url("/images/partenaire-5.png");
       background-size: 40% 20%;
+      @include very-small-device(){
+        display: none;
+      }
     }
     .partenaire-5:hover {
       background-size: 44% 22%;
+    }
+
+    .partenaire-container {
+      display: none;
+      color: white;
+      background-color: #FF8E2B;
+      font-family: $font-Futura-Medium;
+      text-align: center;
+      cursor: pointer;
+      line-height: 26px;
+      .partenaire-txt {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      @include very-small-device(){
+        display: table;
+      }
     }
 
     .bloc-container:nth-of-type(4), .bloc-container:nth-of-type(5), .bloc-container:nth-of-type(6) {

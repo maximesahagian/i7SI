@@ -15,7 +15,9 @@
 
         </div>
         <div class="bloc-container partenaires partenaire-5">
-
+        </div>
+        <div class="bloc-container partenaires partenaire-container">
+        <h2 class="partenaire-txt">Découvrir tout <br> nos partenaires</h2>
         </div>
     </div>
 </section>
