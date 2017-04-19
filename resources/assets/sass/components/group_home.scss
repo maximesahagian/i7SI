@@ -115,6 +115,28 @@ section.group{
             .expertise-pagination-container{
               float: right;
               display: inline-block;
+              width: 65px;
+              position: relative;
+              bottom: 21px;
+              left: 28px;
+            h4{
+              font-family: futura;
+              position: relative;
+              right: 20px;
+              top: 9px;
+              font-size: 40px;
+            }
+              h5{
+                color:$color-lightgrey;
+                font-size: 13px;
+                position: relative;
+                left: 12px;
+              }
+              .pagination-hr{
+                border-color: $color-darkgrey;
+                transform: rotate(-45deg);
+                border: solid 0.1px;
+              }
             }
           }
           .bottom{
