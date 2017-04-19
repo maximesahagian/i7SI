@@ -19,6 +19,53 @@ section.key-figures {
       position: relative;
       cursor: pointer;
       //background-image: url('/images/login-background.jpg');
+
+      .key-block-content {
+        position: absolute;
+        top: 0;
+        padding-left: 15%;
+      }
+
+      .breadcrumb {
+        margin-top: 30px;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        font-family: $font-Futura-Bold;
+        color: $color-orange;
+        .gray-span {
+          color: #ABABAB;
+        }
+      }
+
+      .breadcrumb-white {
+        letter-spacing: 0.5px;
+        color: #fff;
+        .gray-span {
+          color: #9B581D;
+        }
+      }
+
+      .title {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #fff;
+        font-family: $font-Futura-Medium;
+        padding-right: 50px;
+      }
+
+      .text{
+        margin-top: 20px;
+        color: #fff;
+        font-family: $font-Chaparral-Pro-Regular;
+        font-size: 14px;
+        padding-right: 10%;
+        line-height: 20px;
+      }
+
+      .black{
+        color: #000;
+      }
+
       &:after {
         content: "";
         position: absolute;
@@ -53,10 +100,17 @@ section.key-figures {
       background-image: url('/images/actu_right_arrow.jpg');
       background-size: cover;
       position: relative;
+      background-size: 100% 100%;
+      transition: background-size 1s;
+      background-position: 50% 50%;
+
+      &:hover {
+        background-size: 110% 110%;
+      }
       &:after {
         background-image: url('/images/right_rectangle_actu.png');
-        height: 70px;
-        width: 37px;
+        height: 45px;
+        width: 24px;
         border: none;
         border-radius: 0%;
         background-size: contain;
@@ -70,24 +124,37 @@ section.key-figures {
       background-image: url('/images/gray_gradiant_block.jpg');
       background-size: cover;
       position: relative;
-      &:after{
-          background-image: url('/images/left_rectangle_article.png');
-          height: 70px;
-          width: 37px;
-          border: none;
-          border-radius: 0%;
-          background-size: contain;
-          position: absolute;
-          bottom: 70px;
-          left: calc(100% - 36px);
+      background-position: 50% 50%;
+      background-size: 100% 100%;
+      transition: background-size 1s;
+      &:after {
+        background-image: url('/images/left_rectangle_article.png');
+        height: 45px;
+        width: 24px;
+        border: none;
+        border-radius: 0%;
+        background-size: contain;
+        position: absolute;
+        bottom: calc(50% - 45px / 2);
+        left: calc(100% - 23px);
+      }
+      &:hover{
+        background-size: 110% 110%;
       }
     }
 
     .classroom-block {
       background-image: url('/images/classroom_block.jpg');
       background-size: cover;
+      background-size: 100% 100%;
+      transition: background-size 1s;
+      background-position: 50% 50%;
       &:after {
         display: none;
+      }
+
+      &:hover {
+        background-size: 110% 110%;
       }
     }
 
