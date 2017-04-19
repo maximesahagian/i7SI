@@ -30,7 +30,7 @@
                             <h4>
                                 01
                             </h4>
-                            <img src="" alt="/">
+                            <hr class="pagination-hr">
                             <h5>
                                 03
                             </h5>
