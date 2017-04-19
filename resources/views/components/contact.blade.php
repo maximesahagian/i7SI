@@ -6,7 +6,7 @@
          data-to="1"
          data-easing="easeinout"
          data-translatex="150">
-        <h2 class="title">UNE QUESTION, UN PROJET ?</h2>
+        <h2 class="title">{{$title}}</h2>
 
     </div>
 </div>
@@ -18,7 +18,7 @@
     <input type="email" required placeholder="Email" name="email" id="email_contact">
     <input type="text" id="objet_contact" placeholder="Objet du message">
     <textarea name="message" id="message_contact" cols="30" rows="10" placeholder="Votre message"></textarea>
-    <input type="submit" id="submit_contact" value="ENVOYER">
+    <input type="submit" id="submit_contact" value="{{$cta}}">
 
     <script>
         function sendMessage(){
