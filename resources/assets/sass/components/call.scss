@@ -9,6 +9,7 @@ div.bounce{
   to   {transform: scale(1);}
 }
 div.call-us {
+  z-index: 5;
   position: fixed;
   bottom: 9px;
   right: 30px;
@@ -17,24 +18,44 @@ div.call-us {
   border-radius: 36px;
   background-color: $color-orange;
   cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 
 
 
   .call-us-image{
-
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
     margin:18px auto;
     width: 40%;
   }
   .phone{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
     display: block;
   }
   .cross{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
     width: 15px;
     margin-top: 23px;
     display: none;
   }
 }
  .callback--container {
+   z-index: 5;
    height: 365px;
    display: none;
    position: fixed;
