@@ -35,8 +35,22 @@
     <div class="main-app">
         @include ("components/call")
         @include('components/header_home')
-        @include('components/banner_home')
-        @include('components/group_home')
+        @include('components/banner_home', [
+            "title" => $texts[0]->text,
+            "paragraph" => $texts[1]->text,
+            "cta" => $texts[2]->text
+        ])
+        @include('components/group_home',
+        [
+            "title" => $texts[3]->text,
+            "our_history_title" => $texts[4]->text,
+            "our_history_paragraph" => $texts[5]->text,
+            "our_history_cta" => $texts[6]->text,
+            "expertise_title" => $texts[7]->text,
+            "expertise_paragraph_1" => $texts[8]->text,
+            "expertise_paragraph_2" => $texts[9]->text,
+            "expertise_paragraph_3" => $texts[10]->text,
+        ])
         @include('components/key_figures')
         @include('components/partners')
         @include("components/contact")
