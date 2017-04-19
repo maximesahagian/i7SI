@@ -10,9 +10,6 @@ section.key-figures {
   margin-top: 100px;
   display: inline-block;
   width: 100%;
-  @include small-device(){
-    overflow-x: auto;
-  }
 
   .title-key {
     font-size: 40px;
@@ -24,9 +21,6 @@ section.key-figures {
     font-family: $font-Futura-Medium;
   }
   .key-container {
-    @include small-device(){
-      overflow-x: hidden;
-    }
     display: inline-block;
     width: 100%;
     margin-top: 75px;

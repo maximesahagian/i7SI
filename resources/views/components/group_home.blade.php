@@ -6,7 +6,7 @@
              data-to="1"
              data-easing="easeinout"
              data-translatex="150">
-            <h2 class="title-group ">LE GROUPE U&D</h2>
+            <h2 class="title-group ">{{$title}}</h2>
         </div>
     </div>
     <div class="history">
@@ -19,14 +19,11 @@
                          data-to="1"
                          data-easing="easeinout"
                          data-translatey="-130">
-                        <h4 class="history-title">Notre histoire</h4>
-                        <p class="history-text">U&D est une TPE dans le secteur du BTP son activité principal sont les
-                            travaux dis de “gros oeuvres” : mur porteur, charpente etc..) et une spécialisation qui et
-                            l'étanchéité.
-                            Crée en 2012, elle compte aujourd'hui 6 salariés.</p>
+                        <h4 class="history-title">{{$our_history_title}}</h4>
+                        <p class="history-text">{{$our_history_paragraph}}</p>
                         <div class="learn-more">
                             <div class="arrow-right"></div>
-                            <span>EN SAVOIR PLUS</span>
+                            <span>{{$our_history_cta}}</span>
                         </div>
                     </div>
                 </div>
@@ -34,14 +31,11 @@
         </div>
         <div class="scrollme scrollme-mobile">
             <div class="history-content">
-                <h4 class="history-title">Notre histoire</h4>
-                <p class="history-text">U&D est une TPE dans le secteur du BTP son activité principal sont les
-                    travaux dis de “gros oeuvres” : mur porteur, charpente etc..) et une spécialisation qui et
-                    l'étanchéité.
-                    Crée en 2012, elle compte aujourd'hui 6 salariés.</p>
+                <h4 class="history-title">{{$our_history_title}}</h4>
+                <p class="history-text">{{$our_history_paragraph}}</p>
                 <div class="learn-more">
                     <div class="arrow-right"></div>
-                    <span>EN SAVOIR PLUS</span>
+                    <span>{{$our_history_cta}}</span>
                 </div>
             </div>
         </div>
@@ -102,7 +96,7 @@
             <div class="our-expertise">
                 <div class="expertise-text-container">
                     <div class="top">
-                        <h3>Notre savoir faire </h3>
+                        <h3>{{$expertise_title}}</h3>
                         <div class="expertise-pagination-container">
                             <h4>
                                 01
@@ -113,15 +107,18 @@
                             </h5>
                         </div>
                     </div>
-                    <div class="bottom bottom2">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur.</p>
+                    <div class="bottom">
+                        <p>{{$expertise_paragraph_1}}</p>
                     </div>
 
+                    <span class="paragraph-1"
+                          style="display:none">{{$expertise_paragraph_1}}</span>
+
+                    <span class="paragraph-2"
+                          style="display:none">{{$expertise_paragraph_2}}</span>
+
+                    <span class="paragraph-3"
+                          style="display:none">{{$expertise_paragraph_3}}</span>
 
                 </div>
 
@@ -670,7 +667,8 @@
             return a
         }
     });
-    $('.slidercarousel1').slick({
+
+    $('.slidercarousel').slick({
         infinite: true,
         slidesToShow: 1,
         accessibility: true,
@@ -679,34 +677,12 @@
         vertical: true,
         draggable: true,
         verticalSwiping: true,
-        appendDots: $('.dotsemplacement1'),
-
-
-    });
-    $('.slidercarousel2').slick({
-        infinite: true,
-        slidesToShow: 1,
-        accessibility: true,
-        arrows: false,
-        dots: true,
-        vertical: true,
-        draggable: true,
-        verticalSwiping: true,
-        appendDots: $('.dotsemplacement2'),
-
-
+        appendDots: $('.dotsemplacement'),
     });
     $('.dotsemplacement button').text(' ')
-    var textArray = ['Sed ut SLIDE1 perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.',
-        "Sed ut SLIDE2 perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.",
-        "Sed ut SLIDE3 perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur."];
-    $('.slidercarousel1').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-        $('.bottom1 p').text(textArray[nextSlide]).animate('slow');
-        var realNumber = nextSlide + 1;
-        $('.expertise-pagination-container h4').text('0' + realNumber);
-    });
-    $('.slidercarousel2').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-        $('.bottom2 p').text(textArray[nextSlide]).animate('slow');
+    var textArray = [$('.paragraph-1').text(), $('.paragraph-2').text(), $('.paragraph-3').text()];
+    $('.slidercarousel').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        $('.bottom p').text(textArray[nextSlide]).animate('slow');
         var realNumber = nextSlide + 1;
         $('.expertise-pagination-container h4').text('0' + realNumber);
     });

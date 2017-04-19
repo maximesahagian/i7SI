@@ -14,8 +14,14 @@ section.contact{
   }
   padding-right: 15%;
   padding-left: 15%;
+  @include very-small-device(){
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 
   input, textarea{
+    -webkit-appearance: none;
+    border-radius: 0;
     border: none;
     padding: 0px 10px;
     outline: none;
@@ -31,18 +37,46 @@ section.contact{
     display: inline-block;
     float: left;
     margin-top: 70px;
+    @include phone(){
+      width: calc(100% - 20px);
+      margin-top: 0px;
+    }
+  }
+
+  @include phone(){
+    #nom_contact{
+      margin-top: 70px;
+    }
   }
 
   #prenom_contact{
     margin-left: 30px;
+    @include phone(){
+      margin-left: 0px;
+      margin-top: 20px;
+    }
   }
 
-  #email_contact, #objet_contact, #message_contact{
-    width: calc(100% - 20px);
+  #email_contact, #objet_contact{
+    width: calc(50% - 35px);
     margin-top: 20px;
+    display: inline-block;
+    float: left;
+    @include phone(){
+      width: calc(100% - 20px);
+    }
+  }
+
+  #objet_contact{
+    margin-left: 30px;
+    @include phone(){
+      margin-left: 0px;
+    }
   }
 
   #message_contact{
+    width: calc(100% - 20px);
+    margin-top: 20px;
     padding-top: 10px;
     height: auto;
     max-width: calc(100% - 20px);
@@ -53,6 +87,7 @@ section.contact{
   #submit_contact{
     width: 30%;
     margin-left: 70%;
+    display: block;
     margin-top: 20px;
     background-color: #fff;
     color: #000;
@@ -60,5 +95,17 @@ section.contact{
     cursor: pointer;
     font-family: $font-Futura-Medium;
     font-size: 16px;
+    transition: color 0.5s, background-color 0.5s;
+    &:hover{
+      background-color: $color-orange;
+      color: #fff;
+    }
+    @include phone(){
+      width: 55%;
+      margin: 20px auto;
+    }
+    @include very-small-device(){
+      width: 80%;
+    }
   }
 }

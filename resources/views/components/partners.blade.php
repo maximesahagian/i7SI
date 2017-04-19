@@ -2,7 +2,7 @@
     <div class="container">
         <div class="bloc-container">
             <div class="bloc-table">
-                <h2 class="title-partners">Nos partenaires</h2>
+                <h2 class="title-partners">{{$title}}</h2>
             </div>
         </div>
         <div class="bloc-container partenaires partenaire-1">

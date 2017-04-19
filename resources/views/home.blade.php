@@ -35,11 +35,49 @@
     <div class="main-app">
         @include ("components/call")
         @include('components/header_home')
-        @include('components/banner_home')
-        @include('components/group_home')
-        @include('components/key_figures')
-        @include('components/partners')
-        @include("components/contact")
+        @include('components/banner_home', [
+            "title" => $texts[0]->text,
+            "paragraph" => $texts[1]->text,
+            "cta" => $texts[2]->text
+        ])
+        @include('components/group_home',
+        [
+            "title" => $texts[3]->text,
+            "our_history_title" => $texts[4]->text,
+            "our_history_paragraph" => $texts[5]->text,
+            "our_history_cta" => $texts[6]->text,
+            "expertise_title" => $texts[7]->text,
+            "expertise_paragraph_1" => $texts[8]->text,
+            "expertise_paragraph_2" => $texts[9]->text,
+            "expertise_paragraph_3" => $texts[10]->text,
+        ])
+        @include('components/key_figures',
+        [
+            "title" => $texts[11]->text,
+            "info_1" => $texts[12]->text,
+            "title_1" => $texts[13]->text,
+            "paragraph_1" => $texts[14]->text,
+            "info_2" => $texts[15]->text,
+            "title_2" => $texts[16]->text,
+            "paragraph_2" => $texts[17]->text,
+            "info_3" => $texts[18]->text,
+            "title_3" => $texts[19]->text,
+            "paragraph_3" => $texts[20]->text,
+            "info_4" => $texts[21]->text,
+            "title_4" => $texts[22]->text,
+            "paragraph_4" => $texts[23]->text,
+            "info_5" => $texts[24]->text,
+            "title_5" => $texts[25]->text,
+            "paragraph_5" => $texts[26]->text,
+        ]
+        )
+        @include('components/partners',[
+            "title" => $texts[27]->text
+        ])
+        @include("components/contact", [
+            "title" => $texts[28]->text,
+            "cta" => $texts[29]->text
+        ])
         @include("components/footer")
     </div>
 </body>
