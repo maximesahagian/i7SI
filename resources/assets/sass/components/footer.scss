@@ -7,6 +7,10 @@ footer{
   .list{
     display: inline-block;
     height: 100%;
+    @include very-small-device(){
+      width: 100%;
+      text-align: left;
+    }
     li{
       display: inline-block;
       margin-left: 35px;
@@ -14,6 +18,14 @@ footer{
       font-size: 11px;
       &:first-child{
         margin-left: 0px;
+      }
+      @include very-small-device(){
+        display: block;
+        margin-left: 35px;
+        margin-top: 15px;
+        &:first-child{
+          margin-left: 35px;
+        }
       }
     }
   }
