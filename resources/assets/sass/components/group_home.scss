@@ -3,6 +3,7 @@ section.group{
     font-size: 40px;
     color: #000;
     margin-top: 100px;
+    padding-left: 20px;
 
     font-family: $font-Futura-Medium;
   }
@@ -91,8 +92,8 @@ section.group{
         float: left;
       }
       .slider{
-          width: 40%;
-          height: 500px;
+        width: 429px;
+        height: 500px;
         display: inline-block;
         .image{
          // height: 100%;
@@ -106,13 +107,16 @@ section.group{
       }
       .dotsemplacement{
         display: inline-block;
-        width: 5%;
+
         position: relative;
         top: 230px;
         ul{
+          width: 0;
           li{
+            width: 0;
             margin-bottom: 10px;
             button{
+              cursor:pointer;
               height: 15px;
               width: 15px;
               border: none;
@@ -132,10 +136,12 @@ section.group{
       .our-expertise{
         float: right;
         display: inline-block;
-        width: 50%;
-        height: 80%;
+        width: 648px;
+        height:406px;
         position: relative;
-        top: 10%;
+        top: 14%;
+        left: 23px;
+
         -moz-box-shadow: 0px 2px 25px 1px #656565;
         -webkit-box-shadow: 0px 2px 25px 1px #656565;
         -o-box-shadow: 0px 2px 25px 1px #656565;
