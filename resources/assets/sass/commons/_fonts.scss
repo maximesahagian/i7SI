@@ -1,4 +1,4 @@
-$base-path-font: '../../fonts';
+$base-path-font: '../../fonts/';
 
 @mixin registerFont($name) {
   $fontpath: "#{$base-path-font}#{$name}/#{$name}";

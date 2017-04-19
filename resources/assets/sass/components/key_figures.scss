@@ -1,0 +1,102 @@
+section.key-figures {
+  margin-top: 100px;
+  .title-key {
+    font-size: 40px;
+    color: #000;
+    margin-top: 100px;
+    margin-left: 8%;
+    padding-left: 20px;
+    font-family: $font-Futura-Medium;
+  }
+  .key-container {
+    margin-top: 75px;
+    .key-block {
+      width: calc(100% / 4);
+      @include aspect-ratio(1, 1);
+      display: inline-block;
+      background-color: #313131;
+      float: left;
+      position: relative;
+      cursor: pointer;
+      //background-image: url('/images/login-background.jpg');
+      &:after {
+        content: "";
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        border: 1px solid $color-orange;
+        background-image: url('/images/arrow-right-orange.png');
+        background-repeat: no-repeat;
+        background-position: 57% 30%;
+      }
+      &:hover {
+
+      }
+    }
+
+    .black-block {
+      background-color: #222222;
+    }
+
+    .dark-gray-block {
+      background-color: #313131;
+    }
+
+    .white-block {
+      background-color: #FFFFFF;
+    }
+
+    .arrow-right-block {
+      background-image: url('/images/actu_right_arrow.jpg');
+      background-size: cover;
+      position: relative;
+      &:after {
+        background-image: url('/images/right_rectangle_actu.png');
+        height: 70px;
+        width: 37px;
+        border: none;
+        border-radius: 0%;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        top: 100px;
+      }
+    }
+
+    .gray-gradiant-block {
+      background-image: url('/images/gray_gradiant_block.jpg');
+      background-size: cover;
+      position: relative;
+      &:after{
+          background-image: url('/images/left_rectangle_article.png');
+          height: 70px;
+          width: 37px;
+          border: none;
+          border-radius: 0%;
+          background-size: contain;
+          position: absolute;
+          bottom: 70px;
+          left: calc(100% - 36px);
+      }
+    }
+
+    .classroom-block {
+      background-image: url('/images/classroom_block.jpg');
+      background-size: cover;
+      &:after {
+        display: none;
+      }
+    }
+
+    .orange-block {
+      background-color: $color-orange;
+      &:after {
+        background-color: #fff;
+      }
+    }
+
+  }
+}
