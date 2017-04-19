@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Database\Seeder;
+use IlluminateDatabaseSeeder;
 
 class TextsTableSeeder extends Seeder
 {
@@ -53,7 +53,7 @@ class TextsTableSeeder extends Seeder
 
 		DB::table('texts')->insert( [
 			'id'=>5,
-			'libelle'=>'Titre Bloc blanc \"Notre histoire\"',
+			'libelle'=>'Titre Bloc blanc "Notre histoire"',
 			'text'=>'Notre histoire',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
@@ -63,7 +63,7 @@ class TextsTableSeeder extends Seeder
 
 		DB::table('texts')->insert( [
 			'id'=>6,
-			'libelle'=>'Paragraphe du block blanc \"Notre histoire\"',
+			'libelle'=>'Paragraphe du block blanc "Notre histoire"',
 			'text'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
@@ -73,7 +73,7 @@ class TextsTableSeeder extends Seeder
 
 		DB::table('texts')->insert( [
 			'id'=>7,
-			'libelle'=>'CTA du block blanc \"Notre histoire\"',
+			'libelle'=>'CTA du block blanc "Notre histoire"',
 			'text'=>'EN SAVOIR PLUS',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
@@ -83,7 +83,7 @@ class TextsTableSeeder extends Seeder
 
 		DB::table('texts')->insert( [
 			'id'=>8,
-			'libelle'=>'Titre du block \"Notre savoir faire\"',
+			'libelle'=>'Titre du block "Notre savoir faire"',
 			'text'=>'Notre savoir faire',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
@@ -93,7 +93,7 @@ class TextsTableSeeder extends Seeder
 
 		DB::table('texts')->insert( [
 			'id'=>9,
-			'libelle'=>'Slide 1 \"Notre savoir faire\"',
+			'libelle'=>'Slide 1 "Notre savoir faire"',
 			'text'=>'Sed ut SLIDE1 perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia ',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
@@ -103,7 +103,7 @@ class TextsTableSeeder extends Seeder
 
 		DB::table('texts')->insert( [
 			'id'=>10,
-			'libelle'=>'Slide 2 \"Notre savoir faire\"',
+			'libelle'=>'Slide 2 "Notre savoir faire"',
 			'text'=>'Sed ut SLIDE2 perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia ',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
@@ -113,7 +113,7 @@ class TextsTableSeeder extends Seeder
 
 		DB::table('texts')->insert( [
 			'id'=>11,
-			'libelle'=>'Slide 3 \"Notre savoir faire\"',
+			'libelle'=>'Slide 3 "Notre savoir faire"',
 			'text'=>'Sed ut SLIDE3 perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia ',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
@@ -123,7 +123,7 @@ class TextsTableSeeder extends Seeder
 
 		DB::table('texts')->insert( [
 			'id'=>12,
-			'libelle'=>'Titre \"Chiffres Clés\"',
+			'libelle'=>'Titre "Chiffres Clés"',
 			'text'=>'CHIFFRES CLÉS',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
@@ -283,7 +283,7 @@ class TextsTableSeeder extends Seeder
 
 		DB::table('texts')->insert( [
 			'id'=>28,
-			'libelle'=>'Titre \"Nos Partenaires\"',
+			'libelle'=>'Titre "Nos Partenaires"',
 			'text'=>'NOS PARTENAIRES',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
@@ -293,7 +293,7 @@ class TextsTableSeeder extends Seeder
 
 		DB::table('texts')->insert( [
 			'id'=>29,
-			'libelle'=>'Titre \"Contact\"',
+			'libelle'=>'Titre "Contact"',
 			'text'=>'UNE QUESTION, UN PROJET ?',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
@@ -303,7 +303,7 @@ class TextsTableSeeder extends Seeder
 
 		DB::table('texts')->insert( [
 			'id'=>30,
-			'libelle'=>'CTA \"Contact\"',
+			'libelle'=>'CTA "Contact"',
 			'text'=>'ENVOYER',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
