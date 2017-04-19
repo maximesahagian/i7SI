@@ -9,6 +9,7 @@ div.bounce{
   to   {transform: scale(1);}
 }
 div.call-us {
+  z-index: 5;
   position: fixed;
   bottom: 9px;
   right: 30px;
@@ -35,6 +36,7 @@ div.call-us {
   }
 }
  .callback--container {
+   z-index: 5;
    height: 365px;
    display: none;
    position: fixed;
