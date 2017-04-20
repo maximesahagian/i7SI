@@ -195,16 +195,20 @@ section.partners {
                 background-size: cover;
               }*/
         .slick-prev {
-          left: 10px;
+          left: 20px;
           height: 22px;
           width: 12px;
           z-index: 99;
+          position: absolute;
+          top: 95px;
         }
         .slick-next {
-          right: 10px;
+          right: 20px;
           height: 22px;
           width: 12px;
           z-index: 99;
+          position: absolute;
+          top: 95px;
         }
         .slick-list {
           height: 100%;
