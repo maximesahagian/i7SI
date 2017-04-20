@@ -9,8 +9,10 @@ class IndexController extends Controller
 	public function getIndex()
 	{
 		$texts = DB::table('texts')->get();
+		$images = DB::table('images')->get();
 		$data = [
-			"texts" => $texts
+			"texts" => $texts,
+			"images" => $images
 		];
 
 		return view('home', $data);

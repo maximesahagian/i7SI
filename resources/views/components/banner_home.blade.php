@@ -1,4 +1,4 @@
-<section class="banner-home">
+<section class="banner-home" style="background-image: url('/images/{{$image}}');">
     <div class="banner-container">
         <div class="banner-content">
             <h2>{{$title}}</h2>
