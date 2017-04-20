@@ -298,6 +298,7 @@ $mobilePopupMargin: 30px;
 
   // if dropdownContainer option is set, increase z-index to prevent display issues
   &.iti-container {
+    height: 130vw;
     position: absolute;
     top: -1000px;
     left: -1000px;
@@ -322,6 +323,10 @@ $mobilePopupMargin: 30px;
   }
   .country-list {
     max-height: 100%;
+    @include phone(){
+    //  max-height: none;
+
+    }
     @include mobile-landscape(){
       max-height: none;
     }
