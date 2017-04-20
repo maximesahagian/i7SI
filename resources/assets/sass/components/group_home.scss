@@ -9,6 +9,7 @@ section.group{
     @include very-small-device(){
       text-align: center;
       width: 100%;
+      padding-left: 0;
     }
   }
   .history{
