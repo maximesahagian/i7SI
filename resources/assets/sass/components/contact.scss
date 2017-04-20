@@ -84,10 +84,40 @@ section.contact{
     max-height: 300px;
   }
 
+  .info-submit{
+    display: inline-block;
+    width: calc(70% - 30px);
+    vertical-align: middle;
+    background-color: rgba(255, 142, 43, 0.9);
+    font-family: $font-Lato-Medium;
+    font-size: 14px;
+    float:left;
+    color: #fff;
+    margin-top: 20px;
+    height: 50px;
+    opacity: 0;
+    transition: opacity 1s;
+
+    p{
+      padding: 17px 8px;
+    }
+
+    &.active{
+      opacity: 1;
+    }
+    &.success{
+      background-color: rgba(98, 148, 40, 0.9);
+    }
+    &.warning{
+      background-color: rgba(208, 2, 27, 0.9);
+    }
+  }
+
   #submit_contact{
     width: 30%;
-    margin-left: 70%;
-    display: block;
+    margin-left: 30px;
+    float:left;
+    display: inline-block;
     margin-top: 20px;
     background-color: #fff;
     color: #000;
