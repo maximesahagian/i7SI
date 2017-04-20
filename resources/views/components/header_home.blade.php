@@ -3,7 +3,9 @@
         <img src="/images/logo_header.png" alt="">
     </div>
     <ul class="menu">
+        <li><img src="/images/logo_header.png" alt="Logo"></li>
         <li class="active"><a href="#">accueil</a></li>
+
         <li divto="group"><a href="#">à propos</a></li>
         <li divto="expertise-content.desktop"><a href="#">services</a></li>
         <li divto="title-key"><a href="#">chiffres clés</a></li>
@@ -19,9 +21,20 @@
 
 <script>
     $('.burger').click(function () {
-        $('.menu').show();
-        //$('.line:before').css({transform: "rotate(-65deg)"})
-        $('.line').css({background: "red"})
+        if($('.line').hasClass('active') == false){
+            $('.menu').show();
+            $('.menu img').show();
+            $('.line').addClass('active')
+            console.log($('.line').hasClass('active'))
+        }else{
+            $('.menu').hide();
+            $('.menu img').hide();
+            $('.line').removeClass('active')
+            console.log($('.line').hasClass('active'))
+        }
+
+
+
     })
 
     $('.menu li').click(function(){
