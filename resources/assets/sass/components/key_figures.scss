@@ -6,11 +6,9 @@ body{
 }
 .scrollme{
   position:relative;
-  max-width: 200px;
 }
 .animateme{
   position:relative;
-  max-width: 100px;
 @include very-small-device(){
 
 }
@@ -32,6 +30,10 @@ section.key-figures {
     font-family: $font-Futura-Medium;
     @include phone(){
       margin-top: 0;
+    }
+    @include very-small-device(){
+      margin-top: 87px;
+      text-align: center;
     }
   }
   .key-container {
