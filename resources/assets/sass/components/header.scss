@@ -73,9 +73,9 @@ header{
       background: transparent;
       &:before{
         -webkit-animation-name: rotate1; /* Safari 4.0 - 8.0 */
-        -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
         animation-name: rotate1;
-        animation-duration: 2s;
+        animation-duration: 0.5s;
 
         transform: rotate(45deg);
         top:1px;
@@ -84,9 +84,9 @@ header{
       }
       &:after{
         -webkit-animation-name: rotate2; /* Safari 4.0 - 8.0 */
-        -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
         animation-name: rotate2;
-        animation-duration: 2s;
+        animation-duration: 0.5s;
 
         transform: rotate(-45deg);
         top:1px;
@@ -161,6 +161,10 @@ header{
         background: white;
         color:black;
       }
+    }
+    div{
+      background: white;
+      height: 80px;
     }
     li{
       text-transform: capitalize;
