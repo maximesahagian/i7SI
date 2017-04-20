@@ -1,7 +1,8 @@
 section.contact{
   margin-top: 100px;
   padding-top: 60px;
-  padding-bottom: 80px;
+  display: inline-block;
+  padding-bottom: 50px;
   .title{
     color: #000000;
     font-family: $font-Futura-Medium;
@@ -112,6 +113,7 @@ section.contact{
     height: 50px;
     opacity: 0;
     transition: opacity 1s;
+    border-radius: 8px;
     p{
       padding: 17px 8px;
     }
