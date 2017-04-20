@@ -23,12 +23,10 @@
     $('.burger').click(function () {
         if($('.line').hasClass('active') == false){
             $('.menu').show();
-            $('.menu img').show();
             $('.line').addClass('active')
             console.log($('.line').hasClass('active'))
         }else{
             $('.menu').hide();
-            $('.menu img').hide();
             $('.line').removeClass('active')
             console.log($('.line').hasClass('active'))
         }
