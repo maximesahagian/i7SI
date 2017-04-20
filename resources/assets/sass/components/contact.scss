@@ -58,6 +58,9 @@ section.contact{
       width: calc(100% - 20px);
       margin-top: 0px;
     }
+    @include very-small-device(){
+      width: 100%;
+    }
   }
 
   @include phone(){
@@ -81,6 +84,9 @@ section.contact{
     float: left;
     @include phone(){
       width: calc(100% - 20px);
+    }
+    @include very-small-device(){
+      width: 100%;
     }
   }
 
