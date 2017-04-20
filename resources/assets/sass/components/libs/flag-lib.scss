@@ -156,7 +156,10 @@ $mobilePopupMargin: 30px;
     list-style: none;
     // in case any container has text-align:center
     text-align: left;
+@include mobile-landscape(){
+  height: 76vw;
 
+}
     // place menu above the input element
     &.dropup {
       width:260px;
@@ -319,6 +322,9 @@ $mobilePopupMargin: 30px;
   }
   .country-list {
     max-height: 100%;
+    @include mobile-landscape(){
+      max-height: none;
+    }
     width: 100%;
     .country {
       padding: 10px 10px;
