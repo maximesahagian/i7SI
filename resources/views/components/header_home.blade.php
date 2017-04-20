@@ -3,7 +3,7 @@
         <img src="/images/logo_header.png" alt="">
     </div>
     <ul class="menu">
-        <li><img src="/images/logo_header.png" alt="Logo"></li>
+        <div><img src="/images/logo_header.png" alt="Logo"></div>
         <li class="active"><a href="#">accueil</a></li>
 
         <li divto="group"><a href="#">à propos</a></li>

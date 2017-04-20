@@ -71,11 +71,12 @@ section.key-figures {
         }
 
         .breadcrumb {
-          margin-top: 30px;
+          margin-top: 27px;
           font-size: 10px;
           letter-spacing: 0.5px;
           font-family: $font-Futura-Bold;
           color: $color-orange;
+
           .gray-span {
             color: #ABABAB;
           }
@@ -90,7 +91,7 @@ section.key-figures {
         }
 
         .title {
-          margin-top: 10px;
+          margin-top: 32px;
           font-size: 16px;
           color: #fff;
           font-family: $font-Futura-Medium;
@@ -209,4 +210,12 @@ section.key-figures {
 
     }
   }
+}
+
+
+//APOLOGIZE..
+.big-gray-span{
+  font-size: 23px;
+  color: #7C7C7C;
+  font-family: $font-Chaparral-Pro-Regular;
 }

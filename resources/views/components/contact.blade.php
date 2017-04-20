@@ -39,7 +39,7 @@
                 dataType: "html"
             }).then(function(){
                 $('.info-submit').addClass('success');
-                $('.info-submit p').text('Votre message à bien été envoyé, vous recevrez une réponse par mail dans les plus bref délais');
+                $('.info-submit p').text('Votre message à bien été envoyé, vous recevrez une réponse par mail dans les plus brefs délais');
                 if($('.info-submit').hasClass("warning")){
                     $('.info-submit').removeClass("warning");
                 }
@@ -47,7 +47,7 @@
                 .fail(function(){
                     localStorage.setItem("messages", (parseInt(localStorage.getItem("messages"))-1));
                     $('.info-submit').addClass('warning');
-                    $('.info-submit p').text('Une erreur est apparue, merci de remplir les champs correctement.');
+                    $('.info-submit p').text('Une erreur est survenue, merci de bien renseigner les champs.');
                 });
         }
 
@@ -66,7 +66,7 @@
             else{
                 if(localStorage.getItem("messages") == 3){
                     $('.info-submit').addClass('warning');
-                    $('.info-submit p').text('Oups… Vous avez déjà envoyé 3 messages..');
+                    $('.info-submit p').text('Oups.. Vous ne pouvez pas envoyer plus de trois messages.');
                 }
                 else{
                     localStorage.setItem("messages", (parseInt(localStorage.getItem("messages"))+1));
