@@ -25,8 +25,8 @@
     <link rel="manifest" href="/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <script src="/js/slick.js"></script>
     <script src="/js/jquery/jquery-2.1.0.js"></script>
+    <script src="/js/slick.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
