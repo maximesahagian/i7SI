@@ -736,12 +736,7 @@
             // instead of a settings object
         ]
     });
-    $('.dotsemplacement1 button').text(' ');
-    $('.dotsemplacement2 button').text(' ');
-    $( window ).resize(function() {
-        $('.dotsemplacement1 button').text(' ');
-        $('.dotsemplacement2 button').text(' ');
-    });
+
 
     var textArray = [$('.paragraph-1').text(), $('.paragraph-2').text(), $('.paragraph-3').text()];
     $('.slidercarousel1').on('beforeChange', function (event, slick, currentSlide, nextSlide) {

@@ -1,22 +1,26 @@
 
-body{
-  @include small-device(){
+body {
+  @include small-device() {
     overflow-x: hidden;
   }
 }
-.scrollme{
-  position:relative;
-}
-.animateme{
-  position:relative;
-@include very-small-device(){
 
+.scrollme {
+  position: relative;
 }
+
+.animateme {
+  position: relative;
+  @include very-small-device() {
+
+  }
 }
+
 section.key-figures {
   margin-top: 100px;
   display: inline-block;
   width: 100%;
+
   @include phone(){
     margin-top: 75px;
   }
@@ -24,168 +28,184 @@ section.key-figures {
     font-size: 40px;
     color: #000;
     margin-top: 100px;
-    max-width : 500px;
+    max-width: 500px;
     padding-left: 20px;
 
     font-family: $font-Futura-Medium;
-    @include phone(){
+    @include phone() {
       margin-top: 0;
+    }
+    @include very-small-device(){
+      margin-top: 87px;
+      text-align: center;
     }
   }
   .key-container {
     display: inline-block;
     width: 100%;
     margin-top: 75px;
-    .key-block {
-      width: calc(100% / 4);
-      @include aspect-ratio(1, 1);
-      display: inline-block;
-      background-color: #313131;
-      float: left;
-      cursor: pointer;
-
-      .key-block-content {
-        position: absolute;
-        top: 0;
-        padding-left: 15%;
+    @include small-device() {
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    .key-test {
+      @include small-device() {
+        width: 210%;
       }
+      @include very-small-device() {
+        width: 360%;
+      }
+      .key-block {
+        width: calc(100% / 4);
+        @include aspect-ratio(1, 1);
+        display: inline-block;
+        background-color: #313131;
+        float: left;
+        cursor: pointer;
 
-      .breadcrumb {
-        margin-top: 30px;
-        font-size: 10px;
-        letter-spacing: 0.5px;
-        font-family: $font-Futura-Bold;
-        color: $color-orange;
-        .gray-span {
-          color: #ABABAB;
+        .key-block-content {
+          position: absolute;
+          top: 0;
+          padding-left: 15%;
+        }
+
+        .breadcrumb {
+          margin-top: 30px;
+          font-size: 10px;
+          letter-spacing: 0.5px;
+          font-family: $font-Futura-Bold;
+          color: $color-orange;
+          .gray-span {
+            color: #ABABAB;
+          }
+        }
+
+        .breadcrumb-white {
+          letter-spacing: 0.5px;
+          color: #fff;
+          .gray-span {
+            color: #9B581D;
+          }
+        }
+
+        .title {
+          margin-top: 10px;
+          font-size: 16px;
+          color: #fff;
+          font-family: $font-Futura-Medium;
+          padding-right: 50px;
+        }
+
+        .text {
+          margin-top: 20px;
+          color: #fff;
+          font-family: $font-Chaparral-Pro-Regular;
+          font-size: 14px;
+          padding-right: 10%;
+          line-height: 20px;
+        }
+
+        .black {
+          color: #000;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 30px;
+          bottom: 30px;
+          height: 23px;
+          width: 23px;
+          border-radius: 50%;
+          border: 1px solid $color-orange;
+          background-image: url('/images/arrow-right-orange.png');
+          background-repeat: no-repeat;
+          background-position: 57% 30%;
+        }
+        &:hover {
+
         }
       }
 
-      .breadcrumb-white {
-        letter-spacing: 0.5px;
-        color: #fff;
-        .gray-span {
-          color: #9B581D;
+      .black-block {
+        background-color: #222222;
+      }
+
+      .dark-gray-block {
+        background-color: #313131;
+      }
+
+      .white-block {
+        background-color: #FFFFFF;
+      }
+
+      .arrow-right-block {
+        background-image: url('/images/actu_right_arrow.jpg');
+        background-size: cover;
+        background-size: 100% 100%;
+        transition: background-size 1s;
+        background-position: 50% 50%;
+
+        &:hover {
+          background-size: 110% 110%;
+        }
+        &:after {
+          background-image: url('/images/right_rectangle_actu.png');
+          height: 45px;
+          width: 24px;
+          border: none;
+          border-radius: 0%;
+          background-size: contain;
+          position: absolute;
+          left: 0;
+          top: 100px;
         }
       }
 
-      .title {
-        margin-top: 10px;
-        font-size: 16px;
-        color: #fff;
-        font-family: $font-Futura-Medium;
-        padding-right: 50px;
+      .gray-gradiant-block {
+        background-image: url('/images/gray_gradiant_block.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+        transition: background-size 1s;
+        &:after {
+          background-image: url('/images/left_rectangle_article.png');
+          height: 45px;
+          width: 24px;
+          border: none;
+          border-radius: 0%;
+          background-size: contain;
+          position: absolute;
+          bottom: calc(50% - 45px / 2);
+          left: calc(100% - 23px);
+        }
+        &:hover {
+          background-size: 110% 110%;
+        }
       }
 
-      .text{
-        margin-top: 20px;
-        color: #fff;
-        font-family: $font-Chaparral-Pro-Regular;
-        font-size: 14px;
-        padding-right: 10%;
-        line-height: 20px;
+      .classroom-block {
+        background-image: url('/images/classroom_block.jpg');
+        background-size: cover;
+        background-size: 100% 100%;
+        transition: background-size 1s;
+        background-position: 50% 50%;
+        &:after {
+          display: none;
+        }
+
+        &:hover {
+          background-size: 110% 110%;
+        }
       }
 
-      .black{
-        color: #000;
+      .orange-block {
+        background-color: $color-orange;
+        &:after {
+          background-color: #fff;
+        }
       }
 
-      &:after {
-        content: "";
-        position: absolute;
-        left: 30px;
-        bottom: 30px;
-        height: 23px;
-        width: 23px;
-        border-radius: 50%;
-        border: 1px solid $color-orange;
-        background-image: url('/images/arrow-right-orange.png');
-        background-repeat: no-repeat;
-        background-position: 57% 30%;
-      }
-      &:hover {
-
-      }
     }
-
-    .black-block {
-      background-color: #222222;
-    }
-
-    .dark-gray-block {
-      background-color: #313131;
-    }
-
-    .white-block {
-      background-color: #FFFFFF;
-    }
-
-    .arrow-right-block {
-      background-image: url('/images/actu_right_arrow.jpg');
-      background-size: cover;
-      background-size: 100% 100%;
-      transition: background-size 1s;
-      background-position: 50% 50%;
-
-      &:hover {
-        background-size: 110% 110%;
-      }
-      &:after {
-        background-image: url('/images/right_rectangle_actu.png');
-        height: 45px;
-        width: 24px;
-        border: none;
-        border-radius: 0%;
-        background-size: contain;
-        position: absolute;
-        left: 0;
-        top: 100px;
-      }
-    }
-
-    .gray-gradiant-block {
-      background-image: url('/images/gray_gradiant_block.jpg');
-      background-size: cover;
-      background-position: 50% 50%;
-      background-size: 100% 100%;
-      transition: background-size 1s;
-      &:after {
-        background-image: url('/images/left_rectangle_article.png');
-        height: 45px;
-        width: 24px;
-        border: none;
-        border-radius: 0%;
-        background-size: contain;
-        position: absolute;
-        bottom: calc(50% - 45px / 2);
-        left: calc(100% - 23px);
-      }
-      &:hover{
-        background-size: 110% 110%;
-      }
-    }
-
-    .classroom-block {
-      background-image: url('/images/classroom_block.jpg');
-      background-size: cover;
-      background-size: 100% 100%;
-      transition: background-size 1s;
-      background-position: 50% 50%;
-      &:after {
-        display: none;
-      }
-
-      &:hover {
-        background-size: 110% 110%;
-      }
-    }
-
-    .orange-block {
-      background-color: $color-orange;
-      &:after {
-        background-color: #fff;
-      }
-    }
-
   }
 }

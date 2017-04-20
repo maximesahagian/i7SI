@@ -6,6 +6,10 @@ section.group{
     padding-left: 20px;
     font-family: $font-Futura-Medium;
     display: inline-block;
+    @include very-small-device(){
+      text-align: center;
+      width: 100%;
+    }
   }
   .history{
     height: 500px;
@@ -249,6 +253,7 @@ section.group{
               margin: 20px 6%;
             }
             button{
+              font-size: 0;
               cursor:pointer;
               height: 12px;
               width: 5px;
