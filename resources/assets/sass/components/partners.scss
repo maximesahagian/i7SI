@@ -2,6 +2,10 @@ section.partners {
   margin-top: 90px;
   width: 100%;
   text-align: center;
+
+  @include small-device {
+    margin-bottom: -4px;
+  }
   .container {
     display: inline-block;
     width: 92%;
@@ -35,7 +39,6 @@ section.partners {
         border-right: none;
       }
 
-
       .bloc-table {
         display: table;
         height: 100%;
@@ -62,34 +65,34 @@ section.partners {
     .partenaire-1 {
       background-image: url("/images/partenaire-1.png");
       background-size: 30% 30%;
-      @include very-small-device(){
+      @include very-small-device() {
         background-size: 25% 50%;
       }
     }
     .partenaire-1:hover {
       background-size: 35% 35%;
-      @include very-small-device(){
+      @include very-small-device() {
         background-size: 26% 54%;
       }
     }
     .partenaire-2 {
       background-image: url("/images/partenaire-2.png");
       background-size: 22% 44%;
-      @include very-small-device(){
+      @include very-small-device() {
         background-size: 24% 65%;
       }
 
     }
     .partenaire-2:hover {
       background-size: 24% 48%;
-      @include very-small-device(){
+      @include very-small-device() {
         background-size: 26% 69%;
       }
     }
     .partenaire-3 {
       background-image: url("/images/partenaire-3.png");
       background-size: 30% 30%;
-      @include very-small-device(){
+      @include very-small-device() {
         display: none;
       }
     }
@@ -99,7 +102,7 @@ section.partners {
     .partenaire-4 {
       background-image: url("/images/partenaire-4.png");
       background-size: 30% 30%;
-      @include very-small-device(){
+      @include very-small-device() {
         display: none;
       }
     }
@@ -109,7 +112,7 @@ section.partners {
     .partenaire-5 {
       background-image: url("/images/partenaire-5.png");
       background-size: 40% 20%;
-      @include very-small-device(){
+      @include very-small-device() {
         display: none;
       }
     }
@@ -129,7 +132,7 @@ section.partners {
         display: table-cell;
         vertical-align: middle;
       }
-      @include very-small-device(){
+      @include very-small-device() {
         display: table;
       }
     }
@@ -139,6 +142,17 @@ section.partners {
     }
     .bloc-container:nth-of-type(1), .bloc-container:nth-of-type(2), .bloc-container:nth-of-type(4), .bloc-container:nth-of-type(5) {
       border-right: none;
+    }
+    .bloc-container:nth-of-type(3), .partenaire-container {
+      @include very-small-device() {
+       border-bottom: none;
+      }
+    }
+
+    .partenaire-container {
+      @include very-small-device() {
+        border-top: none;
+      }
     }
 
     .bloc-container:nth-of-type(2), .bloc-container:nth-of-type(4) {

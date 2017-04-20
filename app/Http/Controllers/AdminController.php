@@ -63,4 +63,8 @@ class AdminController extends Controller
 
 		return redirect('/admin/texts');
 	}
+
+	public function deleteMessage($id){
+		DB::table('messages')->where('id', '=', $id)->delete();
+	}
 }
