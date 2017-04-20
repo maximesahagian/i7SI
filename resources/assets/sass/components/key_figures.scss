@@ -34,6 +34,10 @@ section.key-figures {
     @include phone() {
       margin-top: 0;
     }
+    @include very-small-device(){
+      margin-top: 87px;
+      text-align: center;
+    }
   }
   .key-container {
     display: inline-block;
