@@ -41,6 +41,9 @@ text-align: center;
     position: relative;
     top: 25%;" src="/images/loader.gif" alt="">
     </div>
+
+    <div class="scroll-top">
+    </div>
     <div class="main-app">
         @include ("components/call")
         @include('components/header_home')
@@ -111,5 +114,27 @@ text-align: center;
     else{
         $('.white-filter').hide();
     }
+
+    $(document).scroll(function(e) {
+        if($(document).scrollTop() > 500){
+            if(!$('.scroll-top').hasClass("visible")){
+                $('.scroll-top').fadeIn();
+                $('.scroll-top').addClass('visible');
+            }
+        }
+        else{
+            if($('.scroll-top').hasClass("visible")){
+                $('.scroll-top').fadeOut();
+                $('.scroll-top').removeClass('visible');
+            }
+        }
+    });
+
+    $('.scroll-top').click(function(){
+        $('body, html').animate({
+            scrollTop: $('body').offset().top
+        }, 1000)
+    })
+
 </script>
 </html>
