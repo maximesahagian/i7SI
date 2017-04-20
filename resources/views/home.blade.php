@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>U&D | HomePage</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="/css/app.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -28,7 +25,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery/jquery-2.1.0.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
