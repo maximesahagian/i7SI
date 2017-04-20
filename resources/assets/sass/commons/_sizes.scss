@@ -75,7 +75,7 @@ $screen-lgCustom-desktop: $screen-lgCustom-min !default;
 }
 
 @mixin mobile-landscape {
-  @media screen and (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {
+  @media screen and ( orientation: landscape) {
     @content;
   }
 }
