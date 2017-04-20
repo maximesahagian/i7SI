@@ -10,7 +10,17 @@
         <li><a href="#">partenaires</a></li>
         <li><a href="#">contact</a></li>
     </ul>
+
     <div class="burger">
         <div class="line"></div>
     </div>
+
 </header>
+
+<script>
+    $('.burger').click(function () {
+        $('.menu').show();
+        //$('.line:before').css({transform: "rotate(-65deg)"})
+        $('.line').css({background: "red"})
+    })
+</script>
