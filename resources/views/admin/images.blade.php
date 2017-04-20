@@ -15,9 +15,9 @@
                                 <h2>{{$image->libelle}}</h2>
                                 <div class="image" style="background-image: url('/images/{{$image->link}}'); width: 450px; height: 250px; background-size: cover;"></div>
                                 <div class="form-group">
-                                    <input type="file" name="image" id="file" class="input-file">
+                                    <label class="file" title=""><input type="file" name="image" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))" /></label>
+                                    <input type="submit" class="btn btn-success" value="Éditer">
                                 </div>
-                                <input type="submit" class="btn btn-success" value="Éditer">
                             </div>
                         </form>
                         @endforeach
