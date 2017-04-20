@@ -14,7 +14,7 @@ class ImagesTableSeeder extends Seeder
 		DB::table('images')->insert( [
 			'id'=>1,
 			'libelle'=>'Image bannière',
-			'link'=>'58f8a89087538.jpg',
+			'link'=>'banner_background.jpg',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
 		] );
