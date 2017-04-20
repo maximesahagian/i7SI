@@ -67,4 +67,35 @@ class AdminController extends Controller
 	public function deleteMessage($id){
 		DB::table('messages')->where('id', '=', $id)->delete();
 	}
+
+
+	public function getImages(){
+		$images = DB::table('images')->get();
+		$data = [
+			'active' => 'images',
+			'images' => $images
+		];
+
+		return view('admin.images', $data);
+	}
+
+	public function editImage($id){
+		$image = $_FILES['image-'.$id];
+
+		if(isset($image) && $image != null){
+			$ext = pathinfo($image['name']);
+			$ext = $ext['extension'];
+			$image_name = uniqid().'.'.$ext;
+			$target = public_path()."/images/".$image_name;
+			move_uploaded_file($image['tmp_name'],$target);
+
+			DB::table('images')->where('id','=',$id)->update([
+				'link' => $image_name
+			]);
+
+		}
+
+		return redirect('/admin/images');
+	}
+
 }
