@@ -16,6 +16,7 @@ Route::group(['middleware' => ['check_auth']], function () {
 	Route::get('/admin/texts', 'AdminController@getTexts');
 	Route::post('/admin/texts/edit', 'AdminController@editTexts');
 	Route::get('/admin/messages/{id}', 'AdminController@getMessage');
+	Route::post('/admin/messages/delete/{id}', 'AdminController@deleteMessage');
 	Route::get('/admin/settings', 'SettingsController@getSettings');
 	Route::post('/admin/settings/edit', 'SettingsController@editSettings');
 });

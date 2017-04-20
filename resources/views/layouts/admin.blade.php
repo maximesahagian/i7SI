@@ -27,6 +27,8 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <meta name="csrf-token" content="{{ Session::token() }}">
+
 </head>
 
 <body class="admin-page">

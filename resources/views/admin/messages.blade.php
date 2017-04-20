@@ -8,7 +8,7 @@
                     <h3 class="panel-title">Les messages</h3>
                 </div>
                 <div class="panel-body">
-                    <div class="row">
+                    <div class="row messages">
                         @foreach($messages as $message)
 
                             <div class="col-sm-4 block-content">
@@ -39,5 +39,26 @@
         </div>
     </div>
     </div>
+
+    <script src="/js/jquery/jquery-2.1.0.js"></script>
+
+    <script>
+        $('.messages .delete').click(function(){
+            var id = $(this).attr('to-delete');
+
+            $.post('/admin/messages/delete/'+id,
+                {
+                    '_token': $('meta[name=csrf-token]').attr('content'),
+                    id: id
+                })
+                .error(
+                    //
+            )
+            .success(function(){
+                    location.reload();
+            }
+            );
+        })
+    </script>
 
 @stop
