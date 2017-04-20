@@ -162,7 +162,7 @@ section.contact{
       margin: 20px auto;
     }
     @include very-small-device(){
-      width: 80%;
+      width: 100%;
     }
   }
   @include phone(){
