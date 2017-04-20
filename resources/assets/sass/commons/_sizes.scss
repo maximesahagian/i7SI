@@ -74,6 +74,11 @@ $screen-lgCustom-desktop: $screen-lgCustom-min !default;
   }
 }
 
+@mixin mobile-landscape {
+  @media screen and (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {
+    @content;
+  }
+}
 // Mix of upper tablet-portrait
 @mixin main-device {
   @media (min-width: ($screen-mdCustom-min)) {
