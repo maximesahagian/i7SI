@@ -15,7 +15,13 @@ $base-path-font: '../../fonts/';
 $font-Futura-Bold: "Futura-Bold";
 $font-Futura-Medium: "Futura-Medium";
 $font-Chaparral-Pro-Regular: "Chaparral-Pro-Regular";
+$font-Lato-Bold : "Lato-Bold";
+$font-Lato-Medium : "Lato-Medium";
+$font-Lato-Regular : "Lato-Regular";
 
 @include registerFont($font-Futura-Bold);
 @include registerFont($font-Futura-Medium);
 @include registerFont($font-Chaparral-Pro-Regular);
+@include registerFont($font-Lato-Bold);
+@include registerFont($font-Lato-Regular);
+@include registerFont($font-Lato-Medium);

@@ -5,11 +5,12 @@
     <ul class="menu">
         <li><img src="/images/logo_header.png" alt="Logo"></li>
         <li class="active"><a href="#">accueil</a></li>
-        <li><a href="#">à propos</a></li>
-        <li><a href="#">savoir faire</a></li>
-        <li><a href="#">chiffres clés</a></li>
-        <li><a href="#">partenaires</a></li>
-        <li class="last"><a href="#">contact</a></li>
+
+        <li divto="group"><a href="#">à propos</a></li>
+        <li divto="expertise-content.desktop"><a href="#">services</a></li>
+        <li divto="title-key"><a href="#">chiffres clés</a></li>
+        <li divto="partners"><a href="#">partenaires</a></li>
+        <li divto="contact"><a href="#">contact</a></li>
     </ul>
 
     <div class="burger">
@@ -35,4 +36,10 @@
 
 
     })
+
+    $('.menu li').click(function(){
+        $('html, body').animate({
+            scrollTop: $("."+$(this).attr('divto')).offset().top
+        }, 1000);
+    });
 </script>
