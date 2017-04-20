@@ -190,7 +190,6 @@ section.group{
   .expertise-content{
     text-align: center;
     @include phone(){
-      margin-bottom: 50px;
     }
     @include very-small-device(){
       width: 100%;
