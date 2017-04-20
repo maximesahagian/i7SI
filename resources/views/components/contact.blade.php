@@ -1,6 +1,6 @@
 <section class="contact ">
 <div class="scrollme">
-    <div class="animateme"
+    <div class="animateme main-title"
          data-when="enter"
          data-from="0"
          data-to="1"

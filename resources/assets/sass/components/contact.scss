@@ -3,6 +3,9 @@ section.contact{
   padding-top: 60px;
   display: inline-block;
   padding-bottom: 50px;
+  .main-title{
+    width: 113px;
+  }
   .title{
     color: #000000;
     font-family: $font-Futura-Medium;
@@ -161,7 +164,11 @@ section.contact{
       border: 1px solid $color-orange;
       line-height: 12px;
     }
+    @include phone(){
+      width: 100%;
+    }
     @include small-device() {
+
       float: inherit;
       margin: 0 auto;
       display: block;
