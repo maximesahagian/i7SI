@@ -45,7 +45,7 @@ body {
   width: 50px;
   background-color: #FF8E2C;
   cursor: pointer;
-  z-index: 6;
+  z-index: 100;
   border-radius: 12px;
   &:before{
     content: "";
