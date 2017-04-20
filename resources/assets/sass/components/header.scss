@@ -163,8 +163,13 @@ header{
       }
     }
     div{
-      background: white;
-      height: 80px;
+      display: none;
+      @include small-device(){
+        display: block;
+        background: white;
+        height: 80px;
+      }
+
     }
     li{
       text-transform: capitalize;
