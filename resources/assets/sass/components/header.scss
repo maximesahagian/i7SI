@@ -202,9 +202,7 @@ header{
           @include small-device(){
             &:hover{
               border-bottom: 4px solid $color-orange;
-              padding-bottom: 13px;
-              padding-left: 5px;
-              padding-right: 5px;
+
             }
             border-bottom: 4px solid $color-orange;
             padding-bottom: 13px;
@@ -216,9 +214,12 @@ header{
       &.active{
         border-bottom: 5px solid $color-orange;
         padding-bottom: 5px;
+
         box-sizing: border-box;
         @include small-device(){
           border-bottom: 5px solid transparent;
+          padding-left: 5px;
+          padding-right: 5px;
         }
         a{
           color: $color-orange;
