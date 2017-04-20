@@ -233,7 +233,10 @@ header{
       }
     }
     .last{
-      height: 100vh;
+      @include small-device(){
+        height: 100vh;
+      }
+
     }
   }
 }
