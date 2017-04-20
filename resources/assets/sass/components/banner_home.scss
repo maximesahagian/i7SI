@@ -10,7 +10,7 @@ section.banner-home{
     .banner-content{
       display: table-cell;
       vertical-align: middle;
-      padding-left: 200px;
+      padding: 120px 0px 0px 200px;
       color: #fff;
       @include small-device(){
         padding-left: 100px;
@@ -54,6 +54,14 @@ section.banner-home{
       .discover{
         margin-top: 50px;
         cursor: pointer;
+        width: 170px;
+
+        &:hover {
+          .arrow-right {
+            border: 1px solid $color-orange;
+            background-color: $color-orange;
+          }
+        }
         .arrow-right{
           display: inline-block;
           height: 50px;
