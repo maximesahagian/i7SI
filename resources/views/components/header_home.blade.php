@@ -36,8 +36,11 @@
     })
 
     $('.menu li').click(function(){
-        $('html, body').animate({
-            scrollTop: $("."+$(this).attr('divto')).offset().top
-        }, 1000);
+
+        if ($(this).attr('divto') != null) {
+            $('html, body').animate({
+                scrollTop: $("."+$(this).attr('divto')).offset().top
+            }, 1000);
+        }
     });
 </script>
