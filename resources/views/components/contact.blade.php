@@ -19,9 +19,11 @@
     <input type="text" id="objet_contact" placeholder="Objet du message">
     <textarea name="message" id="message_contact" cols="30" rows="10" placeholder="Votre message"></textarea>
     <div class="info-submit"><p>Envoi en cours… l’envoi de votre message peut durer quelques instants</p></div>
-    <input type="submit" id="submit_contact" value="{{$cta}}">
+    <input type="submit" id="submit_contact"  value="{{$cta}}">
 
     <script>
+
+
         function sendMessage(){
             $.ajax({
                 url: "/addmessage",
@@ -52,6 +54,7 @@
         }
 
         $('#submit_contact').click(function(){
+            var mailtest = $('#email_contact').val();
             $('.info-submit').addClass('active');
             if($('.info-submit').hasClass('warning')){
                 $('.info-submit').removeClass('warning');
@@ -60,8 +63,17 @@
                 $('.info-submit').removeClass('success');
             }
             if(localStorage.getItem("messages") == null){
-                localStorage.setItem("messages", 1)
-                sendMessage();
+
+                if(reg.test(mailtest) == true)
+                {
+                    localStorage.setItem("messages", 1)
+                    sendMessage();
+                }
+                else
+                {
+                    $('.info-submit').addClass('warning');
+                    $('.info-submit p').text('Oups.. Merci de renseigner une adresse e-mail correcte.');
+                }
             }
             else{
                 if(localStorage.getItem("messages") == 3){
@@ -69,8 +81,18 @@
                     $('.info-submit p').text('Oups.. Vous ne pouvez pas envoyer plus de trois messages.');
                 }
                 else{
-                    localStorage.setItem("messages", (parseInt(localStorage.getItem("messages"))+1));
-                    sendMessage();
+                    var reg = new RegExp('^[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*@[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*[\.]{1}[a-z]{2,6}$', 'i');
+
+                    if(reg.test(mailtest) == true)
+                    {
+                        localStorage.setItem("messages", (parseInt(localStorage.getItem("messages"))+1));
+                        sendMessage();
+                    }
+                    else
+                    {
+                        $('.info-submit').addClass('warning');
+                        $('.info-submit p').text('Oups.. Merci de renseigner une adresse e-mail correcte.');
+                    }
                 }
             }
         })
