@@ -90,6 +90,9 @@ h4{
    -webkit-border-radius: 12px;
    border-radius: 12px;
    text-align: center;
+   @include small-device(){
+     right: 0;
+   }
    .callback--title{
      height: 70px;
      background: $color-orange;
