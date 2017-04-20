@@ -47,6 +47,7 @@ section.key-figures {
     @include small-device() {
       overflow-x: scroll;
       overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
     }
     .key-test {
       @include small-device() {

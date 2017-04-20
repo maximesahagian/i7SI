@@ -1,6 +1,12 @@
 <section class="key-figures">
     <div class="scrollme">
-        <div class="animateme">
+        <div class="animateme"
+             data-when="enter"
+             data-from="0.5"
+             data-to="0"
+             data-opacity="0"
+             data-translatex="-2200"
+        >
             <h3 class="title-key">ACTUALITÉS</h3>
 
         </div>
@@ -28,10 +34,10 @@
                     <p class="text black">{{$paragraph_3}}</p>
                 </div>
             </div>
-            <div class="key-block arrow-right-block">
+            <div class="key-block arrow-right-block" style="background-image: url('/images/{{$image_1}}')">
 
             </div>
-            <div class="key-block gray-gradiant-block">
+            <div class="key-block gray-gradiant-block" style="background-image: url('/images/{{$image_2}}')">
                 <div class="key-block-content">
 
                 </div>
@@ -43,7 +49,7 @@
                     <p class="text black">{{$paragraph_4}}</p>
                 </div>
             </div>
-            <div class="key-block classroom-block">
+            <div class="key-block classroom-block" style="background-image: url('/images/{{$image_3}}')">
 
             </div>
             <div class="key-block orange-block">

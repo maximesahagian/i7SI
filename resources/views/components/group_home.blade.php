@@ -1,12 +1,18 @@
 <section class="group ">
     <div class="scrollme">
-        <div class="animateme">
+        <div class="animateme"
+             data-when="enter"
+             data-from="0.5"
+             data-to="0"
+             data-opacity="0"
+             data-translatex="-2200"
+        >
             <h2 class="title-group ">{{$title}}</h2>
         </div>
     </div>
     <div class="history">
         <div class="history-background">
-            <div class="history-background-image">
+            <div class="history-background-image" style="background-image: url('/images/{{$history_image}}')">
                 <div class="scrollme">
                     <div class="history-content animateme"
                          data-when="exit"
@@ -82,9 +88,9 @@
             <div class="slider">
 
                 <div class="slidercarousel slidercarousel1">
-                    <div class="image"><img src="/images/slider_1.jpg" alt=""></div>
-                    <div class="image"><img src="/images/slider_1.jpg" alt=""></div>
-                    <div class="image"><img src="/images/slider_1.jpg" alt=""></div>
+                    <div class="image"><img src="/images/{{$slider_1_image}}" alt=""></div>
+                    <div class="image"><img src="/images/{{$slider_2_image}}" alt=""></div>
+                    <div class="image"><img src="/images/{{$slider_3_image}}" alt=""></div>
                 </div>
                 <div class="dotsemplacement dotsemplacement1"></div>
             </div>

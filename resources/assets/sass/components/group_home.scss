@@ -3,7 +3,7 @@ section.group{
     font-size: 40px;
     color: #000;
     margin-top: 100px;
-    padding-left: 20px;
+    padding-left: 120px;
     font-family: $font-Futura-Medium;
     display: inline-block;
     @include very-small-device(){
@@ -278,7 +278,7 @@ section.group{
               font-size: 0;
               cursor:pointer;
               height: 12px;
-              width: 5px;
+              width: 12px;
               border: none;
               border-radius: 50px;
               z-index: 4;
@@ -288,7 +288,8 @@ section.group{
               }
               @include small-device(){
                 height: 12px;
-                width: 5px;
+                width: 12px;
+                background: $color-lightgrey;
               }
             }
           }
@@ -308,10 +309,6 @@ section.group{
         top: 63px;
         left: 23px;
 
-        -moz-box-shadow: 0px 2px 25px 1px rgba(0,0,0,0.07);
-        -webkit-box-shadow: 0px 2px 25px 1px rgba(0,0,0,0.07);
-        -o-box-shadow: 0px 2px 25px 1px rgba(0,0,0,0.07);
-        box-shadow: 0px 2px 25px 1px rgba(0,0,0,0.07);
         @include small-device(){
           width: 50%;
           margin-right: 0%;
@@ -319,10 +316,7 @@ section.group{
           left: -1%;
 
 
-          -moz-box-shadow: 0px 2px 25px 1px white;
-          -webkit-box-shadow: 0px 2px 25px 1px white;
-          -o-box-shadow: 0px 2px 25px 1px white;
-          box-shadow: 0px 2px 25px 1px white;
+
         }
         @include phone(){
           width: 70%;
@@ -338,56 +332,56 @@ section.group{
         filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=25);
         .expertise-text-container{
           padding: 2% 4%;
-@include very-small-device(){
-  height: 0;
-}
-          .top{
-            h3{
+      @include very-small-device(){
+        height: 0;
+      }
+          .top {
+            h3 {
               font-size: 25px;
               display: inline-block;
               text-align: right;
               float: left;
               margin-top: 25px;
               font-family: $font-Futura-Medium;
-              @include small-device{
+              @include small-device {
                 position: relative;
-                top:22px;
+                top: 22px;
               }
             }
-            .expertise-pagination-container{
+            .expertise-pagination-container {
               float: right;
               display: inline-block;
               width: 14%;
               position: relative;
               bottom: -4px;
-              right:-13px;
-              @include small-device(){
+              right: -13px;
+              @include small-device() {
                 width: 19%;
               }
-            h4{
-              font-family: futura;
-              position: relative;
-              right: 50%;
-              top: 9px;
-              font-size: 40px;
-            }
-              h5{
-                color:$color-lightgrey;
+              h4 {
+                font-family: futura;
+                position: relative;
+                right: 50%;
+                top: 9px;
+                font-size: 40px;
+              }
+              h5 {
+                color: $color-orange;
                 font-size: 13px;
                 position: absolute;
                 left: 75%;
                 top: 73px;
-                @include small-device(){
-                 color: $color-orange;
+                @include small-device() {
+                  color: $color-orange;
                 }
 
               }
 
-              .pagination-hr{
+              .pagination-hr {
 
                 transform: rotate(-65deg);
-                border: solid 0.1px $color-lightgrey;
-                @include small-device(){
+                border: solid 0.1px $color-orange;
+                @include small-device() {
                   border: solid 0.1px $color-orange;
 
                 }

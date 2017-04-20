@@ -20,15 +20,25 @@
 </header>
 
 <script>
+    $(window).resize(function () {
+        if($(window).width()>=1024){
+            $('.menu').show();
+        }else{
+            $('.menu').hide();
+            $('.burger').show();
+            $('.line').removeClass('active');
+
+
+        }
+
+    })
     $('.burger').click(function () {
         if($('.line').hasClass('active') == false){
             $('.menu').show();
             $('.line').addClass('active')
-            console.log($('.line').hasClass('active'))
         }else{
             $('.menu').hide();
             $('.line').removeClass('active')
-            console.log($('.line').hasClass('active'))
         }
 
 

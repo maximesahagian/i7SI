@@ -3,6 +3,9 @@
 <div class="callback--container">
     <div class="callback--title">
         <h3>Un click, un appel</h3>
+        <div class="call-close">
+            <img src="/images/call-cross.png" alt="X">
+        </div>
 
         <h4>avec U&D</h4>
     </div>
@@ -15,8 +18,7 @@
 </div>
 <div class="call-us ">
     <h4>Appellez moi</h4>
-    <img class="call-us-image phone" src="/images/call-phone.png" alt="Contact">
-    <img class="call-us-image  cross" src="/images/call-cross.png" alt="Fermer">
+    <img class="call-us-image " src="/images/callmen.png" alt="Contact">
 </div>
 
 
@@ -34,20 +36,17 @@
         setTimeout(function () {
             $('.call-us').removeClass('bounce');
         },300)
-        if($('.phone').css('display')== 'none'){
 
-
-            $('.callback--container').fadeOut();
-            $('.cross').css({display : 'none'});
-            $('.phone').css({display : 'block'});
-        }else{
-
-            $('.callback--container').fadeIn();
-            $('.phone').css({display : 'none'});
-            $('.cross').css({display : 'block'});
-        }
+        $('.callback--container').fadeIn();
 
 
         //OPEN THE POPIN
     });
+    $('.call-close').click(function(){
+        $('.call-close').addClass('bounce');
+        setTimeout(function () {
+            $('.call-close').removeClass('bounce');
+        },300)
+        $('.callback--container').fadeOut();
+    })
 </script>

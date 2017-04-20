@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>U&D | HomePage</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
 
@@ -28,9 +25,8 @@
     <link rel="manifest" href="/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="/js/slick.js"></script>
+    <script src="/js/jquery/jquery-2.1.0.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
@@ -46,13 +42,17 @@ text-align: center;
     position: relative;
     top: 25%;" src="/images/loader.gif" alt="">
     </div>
+
+    <div class="scroll-top">
+    </div>
     <div class="main-app">
         @include ("components/call")
         @include('components/header_home')
         @include('components/banner_home', [
             "title" => $texts[0]->text,
             "paragraph" => $texts[1]->text,
-            "cta" => $texts[2]->text
+            "cta" => $texts[2]->text,
+            "image" => $images[0]->link
         ])
         @include('components/group_home',
         [
@@ -64,6 +64,10 @@ text-align: center;
             "expertise_paragraph_1" => $texts[8]->text,
             "expertise_paragraph_2" => $texts[9]->text,
             "expertise_paragraph_3" => $texts[10]->text,
+            "history_image" => $images[1]->link,
+            "slider_1_image" => $images[2]->link,
+            "slider_2_image" => $images[3]->link,
+            "slider_3_image" => $images[4]->link
         ])
         @include('components/key_figures',
         [
@@ -83,6 +87,9 @@ text-align: center;
             "info_5" => $texts[24]->text,
             "title_5" => $texts[25]->text,
             "paragraph_5" => $texts[26]->text,
+            "image_1" => $images[5]->link,
+            "image_2" => $images[6]->link,
+            "image_3" => $images[7]->link
         ]
         )
         @include("components/contact", [
@@ -108,5 +115,27 @@ text-align: center;
     else{
         $('.white-filter').hide();
     }
+
+    $(document).scroll(function(e) {
+        if($(document).scrollTop() > 500){
+            if(!$('.scroll-top').hasClass("visible")){
+                $('.scroll-top').fadeIn();
+                $('.scroll-top').addClass('visible');
+            }
+        }
+        else{
+            if($('.scroll-top').hasClass("visible")){
+                $('.scroll-top').fadeOut();
+                $('.scroll-top').removeClass('visible');
+            }
+        }
+    });
+
+    $('.scroll-top').click(function(){
+        $('body, html').animate({
+            scrollTop: $('body').offset().top
+        }, 1000)
+    })
+
 </script>
 </html>
