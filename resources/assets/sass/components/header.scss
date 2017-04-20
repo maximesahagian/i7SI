@@ -14,6 +14,27 @@
   100% {transform: rotate(-45deg);
     top:1px;}
 }
+@-webkit-keyframes rotateinitial1 {
+  0%   {                transform: rotate(45deg);
+    top:1px;
+  }
+  100% {transform: rotate(0deg);
+    bottom: 8px;
+
+  }
+}
+@-webkit-keyframes rotateinitial2 {
+  0%   {
+
+    transform: rotate(-45deg);
+    top: 1px;
+  }
+
+
+  100% {transform: rotate(0deg);
+    top: 8px;
+  }
+}
 
 header{
   height: 60px;
@@ -81,6 +102,10 @@ header{
       position: relative;
       top: 9px;
       &:before{
+        -webkit-animation-name: rotateinitial1; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+        animation-name: rotateinitial1;
+        animation-duration: 0.5s;
         content: "";
         height: 4px;
         width: 28px;
@@ -91,6 +116,10 @@ header{
         left: 0px;
       }
       &:after{
+        -webkit-animation-name: rotateinitial2; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+        animation-name: rotateinitial2;
+        animation-duration: 0.5s;
         content: "";
         height: 4px;
         width: 28px;
