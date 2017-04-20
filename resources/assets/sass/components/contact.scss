@@ -4,7 +4,15 @@ section.contact{
   display: inline-block;
   padding-bottom: 50px;
   .main-title{
-    width: 113px;
+    @include phone(){
+      width: 226px;
+
+    }
+  h2{
+    @include phone(){
+      font-size: 25px;
+    }
+  }
   }
   .title{
     color: #000000;
