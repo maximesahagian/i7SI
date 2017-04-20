@@ -15,13 +15,9 @@
                                 <h2>{{$image->libelle}}</h2>
                                 <div class="image" style="background-image: url('/images/{{$image->link}}'); width: 450px; height: 250px; background-size: cover;"></div>
                                 <div class="form-group">
-                                    <input type="file" name="image-{{$image->id}}" id="file" class="input-file">
-                                    <label for="file" class="btn btn-tertiary js-labelFile">
-                                        <i class="icon fa fa-check"></i>
-                                        <span class="js-fileName">Choisir une image</span>
-                                    </label>
+                                    <label class="file" title=""><input type="file" name="image" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))" /></label>
+                                    <input type="submit" class="btn btn-success" value="Éditer">
                                 </div>
-                                <input type="submit" class="btn btn-success" value="Éditer">
                             </div>
                         </form>
                         @endforeach
@@ -30,23 +26,7 @@
         </div>
     </div>
     <script>
-        (function() {
 
-            'use strict';
-
-            $('.input-file').each(function() {
-                var $input = $(this),
-                    $label = $input.next('.js-labelFile'),
-                    labelVal = $label.html();
-
-                $input.on('change', function(element) {
-                    var fileName = '';
-                    if (element.target.value) fileName = element.target.value.split('\\').pop();
-                    fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass('has-file').html(labelVal);
-                });
-            });
-
-        })();
     </script>
 
 @stop

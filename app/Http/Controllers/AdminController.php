@@ -80,7 +80,7 @@ class AdminController extends Controller
 	}
 
 	public function editImage($id){
-		$image = $_FILES['image-'.$id];
+		$image = $_FILES['image'];
 
 		if(isset($image) && $image != null){
 			$ext = pathinfo($image['name']);

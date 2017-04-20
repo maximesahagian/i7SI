@@ -7169,53 +7169,57 @@ html, body {
     margin-left: 50px;
   }
 
-  .form-group{
+  label.file input {position:absolute; width:0; overflow:hidden; opacity:0;}
+  label.file {
     width: 200px;
-    margin-top: 20px;
     display: inline-block;
+    height:53px;
+    line-height: 50px !important;
+    cursor:pointer;
+    margin-top: 20px;
     float: left;
+    white-space:nowrap;
+    font-family:sans-serif;
+    text-align:right;
   }
-  .btn-tertiary {
-    color: #555;
-    padding: 0;
-    line-height: 40px;
-    width: 300px;
-    margin: auto;
-    display: block;
-    border: 2px solid #555;
-    &:hover,
-    &:focus {
-      color: lighten(#555, 20%);
-      border-color: lighten(#555, 20%);
-    }
+  label.file:before {
+    content:"Aucune image";
+    display:block;
+    position:absolute;
+    box-sizing:border-box;
+    width:130px;
+    height:inherit;
+    border:0px solid #e8eeef;
+    border-width:2px 0px 2px 2px;
+    border-radius:3px 0 0 3px;
+    background-color:#fff;
+    color:#a0b7c5;
+    font-size:12px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align:center;
+    vertical-align:middle;
   }
-
-  /* input file style */
-
-  .input-file {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-    + .js-labelFile {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      padding: 0 10px;
-      cursor: pointer;
-      .icon:before {
-        //font-awesome
-        content: "\f093";
-      }
-      &.has-file {
-        .icon:before {
-          //font-awesome
-          content: "\f00c";
-          color: #5AAC7B;
-        }
-      }
-    }
+  label.file[title]:not([title=""]):before{
+    content:attr(title);
+    color:#162f44;
+  }
+  label.file:after {
+    content:"CHOISIR";
+    display:inline-block;
+    position:relative;
+    box-sizing:border-box;
+    width:74px;
+    height:inherit;
+    padding:0 4px;
+    border-radius:0 3px 3px 0;
+    background-color:#a0b7c5;
+    color:#fff;
+    overflow:hidden;
+    font-size:9px;
+    font-weight:bold;
+    text-overflow:ellipsis;
+    text-align:center;
+    vertical-align:middle;
   }
 }
