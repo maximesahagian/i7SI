@@ -136,6 +136,7 @@ header{
   }
 
   .menu{
+    display: block ;
     @include small-device(){
       display: none;
       width: 100%;
@@ -154,7 +155,7 @@ header{
     right: -10%;
   }
 }
-    margin-left:60px;
+//    margin-left:60px;
     ul{
       @include small-device(){
         background: white;
