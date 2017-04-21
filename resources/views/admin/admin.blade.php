@@ -23,7 +23,7 @@
                                 <span class="icon" style="background-color: #FF8E2B"><i class="fa fa-phone"></i></span>
                                 <p>
                                     <span class="number">23</span>
-                                    <span class="title">Demandes d'appels dans le mois</span>
+                                    <span class="title">Demandes d'appels ce mois-ci</span>
                                 </p>
                             </div>
                         </div>
