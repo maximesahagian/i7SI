@@ -46,7 +46,7 @@
                 dataType: "html"
             }).then(function(){
                 $('#demo').val('')
-                
+                $('.allow-dropdown').html("<p>votre demande a bien été prise en compte </p>");
 
                 })
                 .fail(function(){

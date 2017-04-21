@@ -88,9 +88,9 @@
             <div class="slider">
 
                 <div class="slidercarousel slidercarousel1">
-                    <div class="image"><img src="/images/{{$slider_1_image}}" alt=""></div>
-                    <div class="image"><img src="/images/{{$slider_2_image}}" alt=""></div>
-                    <div class="image"><img src="/images/{{$slider_3_image}}" alt=""></div>
+                    <div class="image" style="background-image: url('/images/{{$slider_1_image}}');    height: 494px; background-size: cover;"></div>
+                    <div class="image" style="background-image: url('/images/{{$slider_2_image}}');    height: 494px; background-size: cover;"></div>
+                    <div class="image" style="background-image: url('/images/{{$slider_3_image}}');    height: 494px; background-size: cover;"></div>
                 </div>
                 <div class="dotsemplacement dotsemplacement1"></div>
             </div>
