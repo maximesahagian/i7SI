@@ -14,7 +14,7 @@ class TextsTableSeeder extends Seeder
 		DB::table('texts')->insert( [
 			'id'=>1,
 			'libelle'=>'Titre bannière',
-			'text'=>'Accompagner nos client et leur offrir un travail de qualité',
+			'text'=>'Accompagner nos clients et leur offrir un travail de qualité',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
 		] );
