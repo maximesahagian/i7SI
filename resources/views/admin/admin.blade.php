@@ -11,10 +11,19 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="metric">
-                                <span class="icon"><i class="fa fa-file-text"></i></span>
+                                <span class="icon"><i class="fa fa-comments"></i></span>
                                 <p>
                                     <span class="number">4</span>
-                                    <span class="title">Messages</span>
+                                    <span class="title">Messages reçus ce mois-ci</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="metric">
+                                <span class="icon" style="background-color: #FF8E2B"><i class="fa fa-phone"></i></span>
+                                <p>
+                                    <span class="number">23</span>
+                                    <span class="title">Demandes d'appels dans le mois</span>
                                 </p>
                             </div>
                         </div>
