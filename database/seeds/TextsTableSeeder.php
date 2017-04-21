@@ -184,7 +184,7 @@ class TextsTableSeeder extends Seeder
 		DB::table('texts')->insert( [
 			'id'=>18,
 			'libelle'=>'Paragraphe du 2ème block chiffres clés',
-			'text'=>'2 700 000 €',
+			'text'=>'270 000 €',
 			'created_at'=>date('Y-m-d H:i:s'),
 			'updated_at'=>date('Y-m-d H:i:s')
 		] );

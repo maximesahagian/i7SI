@@ -29,7 +29,7 @@ section.key-figures {
     color: #000;
     margin-top: 100px;
     max-width: 500px;
-    padding-left: 20px;
+    padding-left: 120px;
 
     font-family: $font-Futura-Medium;
     @include phone() {
@@ -216,7 +216,7 @@ section.key-figures {
 
 //APOLOGIZE..
 .big-gray-span{
-  font-size: 38px;
+  font-size: 35px;
   color: #7C7C7C;
   font-family: $font-Chaparral-Pro-Regular;
   margin-top: 40px;
@@ -226,7 +226,7 @@ section.key-figures {
     display: block;
     color: $color-orange;
     margin-top: 40px;
-    font-size: 38px;
+    font-size: 35px;
     font-family: $font-Chaparral-Pro-Regular;
   }
 }
