@@ -29,4 +29,12 @@ class IndexController extends Controller
 			]
 		);
 	}
+    public function addCall(Request $request){
+        DB::table('calls')->insert(
+            [
+                'number' => $request['number'],
+                'country' => $request['country']
+            ]
+        );
+    }
 }

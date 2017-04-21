@@ -28,6 +28,36 @@
 </script>
 <script>
 
+
+    $('.inputcontainer--button').click(function () {
+
+        if($('#demo').val() != null && $('#demo').val() != "" ){
+            $.ajax({
+                url: "/addcall",
+                method: "POST",
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {
+                    number : $('#demo').val(),
+                    country :$('.selected-flag').attr('title'),
+
+                },
+                dataType: "html"
+            }).then(function(){
+                $('#demo').val('')
+                $('.allow-dropdown').html("<p>votre demande a bien été prise en compte </p>");
+
+                })
+                .fail(function(){
+
+                });
+
+
+        }
+
+    });
+
     $("#demo").intlTelInput();
 
     $('.call-us').click(function(){

@@ -4,6 +4,7 @@ Route::get('/', 'IndexController@getIndex')->name('home');
 //Route::get('/sendmail', 'IndexController@sendMail');
 
 Route::post('/addmessage', 'IndexController@addMessage')->name('add_message');
+Route::post('/addcall', 'IndexController@addCall');
 
 
 Route::get('/logout', 'AdminController@authLogout');
