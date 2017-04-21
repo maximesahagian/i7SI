@@ -22,7 +22,7 @@
                          data-translatey="-130">
                         <h4 class="history-title">{{$our_history_title}}</h4>
                         <p class="history-text">{{$our_history_paragraph}}</p>
-                        <div class="learn-more">
+                        <div divto="title-key" class="learn-more scroll-button">
                             <div class="arrow-right"></div>
                             <span>{{$our_history_cta}}</span>
                         </div>
@@ -34,7 +34,7 @@
             <div class="history-content">
                 <h4 class="history-title">{{$our_history_title}}</h4>
                 <p class="history-text">{{$our_history_paragraph}}</p>
-                <div class="learn-more">
+                <div divto="title-key" class="learn-more scroll-button">
                     <div class="arrow-right"></div>
                     <span>{{$our_history_cta}}</span>
                 </div>
@@ -207,5 +207,13 @@
             $('.bottom p').text(textArray[nextSlide]).animate('slow');
             var realNumber = nextSlide + 1;
             $('.expertise-pagination-container h4').text('0' + realNumber);
+        });
+
+        $('.scroll-button').click(function(){
+            if ($(this).attr('divto') != null) {
+                $('html, body').animate({
+                    scrollTop: $("."+$(this).attr('divto')).offset().top
+                }, 1000);
+            }
         });
 </script>
