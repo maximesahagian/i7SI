@@ -79,6 +79,19 @@ class AdminController extends Controller
 		return view('admin.images', $data);
 	}
 
+	public function getCalls(){
+		$calls = DB::table('calls')->get();
+		$data = [
+			'active' => 'calls',
+			'calls' => $calls
+		];
+		return view('admin.calls', $data);
+	}
+
+	public function deleteCall($id){
+		DB::table('calls')->where('id', '=', $id)->delete();
+	}
+
 	public function editImage($id){
 		$image = $_FILES['image'];
 
