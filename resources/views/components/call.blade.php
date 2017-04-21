@@ -17,7 +17,7 @@
     </div>
 </div>
 <div class="call-us ">
-    <h4>Appellez moi</h4>
+    <h4>Appelez moi</h4>
     <img class="call-us-image " src="/images/callmen.png" alt="Contact">
 </div>
 
