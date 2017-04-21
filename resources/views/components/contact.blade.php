@@ -63,7 +63,6 @@
                 $('.info-submit').removeClass('success');
             }
             if(localStorage.getItem("messages") == null){
-
                 if(reg.test(mailtest) == true)
                 {
                     localStorage.setItem("messages", 1)
