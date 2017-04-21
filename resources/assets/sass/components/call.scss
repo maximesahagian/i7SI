@@ -12,7 +12,7 @@ div.call-us {
   z-index: 100;
   position: fixed;
   bottom: 0px;
-  right: 30px;
+  right: 60px;
   height: 38px;
   width: 182px;
   border-top-left-radius: 10px;
@@ -26,6 +26,13 @@ div.call-us {
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
+
+  @include very-small-device(){
+    right: 30px;
+  }
+  @include phone(){
+    right: 30px;
+  }
 
 @include mobile-landscape(){
   z-index: 99;
@@ -146,7 +153,7 @@ h4{
        width: 30px;
        float: right;
        position: relative;
-       top: -26px;
+       top: -16px;
        right: 25px;
        height: 30px;
        border-radius: 20px;
