@@ -8,7 +8,7 @@
 
         <li divto="group"><a href="#">à propos</a></li>
         <li divto="expertise-content.desktop"><a href="#">services</a></li>
-        <li divto="title-key"><a href="#">chiffres clés</a></li>
+        <li divto="title-key"><a href="#">actualités</a></li>
         <li divto="partners"><a href="#">partenaires</a></li>
         <li divto="contact" class="last"><a href="#">contact</a></li>
     </ul>
