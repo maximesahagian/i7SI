@@ -216,7 +216,17 @@ section.key-figures {
 
 //APOLOGIZE..
 .big-gray-span{
-  font-size: 23px;
+  font-size: 38px;
   color: #7C7C7C;
   font-family: $font-Chaparral-Pro-Regular;
+  margin-top: 40px;
+  vertical-align: -webkit-baseline-middle;
+  &:after {
+    content:'↗ 3,32%';
+    display: block;
+    color: $color-orange;
+    margin-top: 40px;
+    font-size: 38px;
+    font-family: $font-Chaparral-Pro-Regular;
+  }
 }
