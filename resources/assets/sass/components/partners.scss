@@ -176,19 +176,23 @@ section.partners {
 section.partners {
   height: 200px;
   border-bottom: 1px solid #2A2A2A;
+  outline: none;
   .container {
     display: inline-block;
     width: 100%;
     background-color: #191919;
     height: 200px;
+    outline: none;
     .slider {
       height: 100%;
       text-align: center;
+      outline: none;
       .slick-slider {
         width: 100%;
         text-align: center;
         float: none;
         height: 100%;
+        outline: none;
 
         /*      .slick-prev {
                 background-image: url("/images/arrow_right.png");
@@ -201,6 +205,7 @@ section.partners {
           z-index: 99;
           position: absolute;
           top: 95px;
+          outline: none;
         }
         .slick-next {
           right: 20px;
@@ -209,18 +214,23 @@ section.partners {
           z-index: 99;
           position: absolute;
           top: 95px;
+          outline: none;
         }
         .slick-list {
           height: 100%;
+          outline: none;
           .slick-track {
             height: 100%;
+            outline: none;
             .image {
               border-left: solid 1px #2A2A2A;
+              outline: none;
               img {
                 width: 156px;
                 height: 43px;
                 display: inline-block !important;
                 margin-top: 80px;
+                outline: none;
               }
             }
           }
