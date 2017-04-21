@@ -55,6 +55,7 @@
 
         $('#submit_contact').click(function(){
             var mailtest = $('#email_contact').val();
+            var reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             $('.info-submit').addClass('active');
             if($('.info-submit').hasClass('warning')){
                 $('.info-submit').removeClass('warning');
@@ -63,7 +64,6 @@
                 $('.info-submit').removeClass('success');
             }
             if(localStorage.getItem("messages") == null){
-
                 if(reg.test(mailtest) == true)
                 {
                     localStorage.setItem("messages", 1)
